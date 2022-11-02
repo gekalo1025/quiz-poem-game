@@ -1,0 +1,36 @@
+.current-question {
+    &__container {
+        display: flex;
+        @include adaptiv-value("gap", 100, 20, 1920);
+        justify-content: space-around;
+    }
+
+    &__img {
+        max-width: 300px;
+
+        border: 0.5px solid black;
+        border-radius: 5%;
+        flex: 0 1 25%;
+
+        img {
+            width: 100%;
+            height: auto;
+            min-width: 100px;
+            // object-fit: contain;
+        }
+    }
+
+    &__info {
+        flex: 0 0 50%;
+    }
+
+    &__title {
+        @include adaptiv-value("font-size", 35, 15, 1920);
+        @include adaptiv-value("letter-spacing", 10, 0, 1920);
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+
+    &__player {
+    }
+}

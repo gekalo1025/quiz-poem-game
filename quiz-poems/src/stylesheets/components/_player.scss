@@ -1,0 +1,57 @@
+.player-icon {
+    @include adaptiv-value("width", 50, 20, 1920);
+    img {
+        max-width: 100%;
+    }
+}
+.player {
+    &__controls {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__play {
+    }
+
+    &__timebar {
+        flex: 1 1 auto;
+        align-items: center;
+    }
+}
+.timebar {
+    position: relative;
+    &__line {
+        width: 100%;
+        background-color: grey;
+        border-radius: 15%;
+        @include adaptiv-value("height", 5, 2, 1920);
+        margin-bottom: 10px;
+    }
+
+    &__circle {
+        position: absolute;
+        top: -25%;
+        left: -1%;
+        background-color: rgb(0, 0, 0);
+        @include adaptiv-value("height", 15, 10, 1920);
+        @include adaptiv-value("width", 15, 10, 1920);
+
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    &__time-info {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include adaptiv-value("font-size", 25, 10, 1920);
+        .timebar-current-time {
+            position: relative;
+            left: 8%;
+        }
+        .timebar-max-time {
+        }
+    }
+}

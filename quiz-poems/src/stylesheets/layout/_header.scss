@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 .header {
     padding-top: 20px;
+    @include adaptiv-value("margin-bottom", 50, 15, 1920);
     &__top {
         display: flex;
         justify-content: space-between;
