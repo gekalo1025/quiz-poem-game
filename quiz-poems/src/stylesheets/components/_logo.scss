@@ -1,5 +1,5 @@
 .logo {
-    max-width: 200px;
+    @include adaptiv-value("width", 200, 100, 1920);
     &__img {
         max-width: 100%;
     }
