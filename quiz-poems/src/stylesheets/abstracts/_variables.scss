@@ -4,7 +4,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Roboto", sans-serif !default;
+$text-font-stack: "Art-nuvo", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -12,6 +12,7 @@ $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
 
 /// Copy text color
 /// @type Color
+$background-color: #fff9f3;
 $text-color: #333b41 !default;
 $text-color2: white;
 
@@ -25,20 +26,20 @@ $yellow-color: #ffee2e;
 ///
 /// Container's maximum width
 /// @type Length
-$max-width-layout: 1600px;
-$max-width-container: 1160px !default;
+$max-width-layout: 1920px;
+$max-width-container: 1200px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
   "small": 320px,
-  "medium": 640px,
+  "medium": 700px,
   "large": 1000px,
 ) !default;
 
 $breakpoints-large: 1000px;
-$breakpoints-medium: 640px;
+$breakpoints-medium: 700px;
 $breakpoints-small: 320px;
 
 /// Relative or absolute URL where all assets are served from
