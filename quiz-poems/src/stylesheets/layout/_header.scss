@@ -2,4 +2,39 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
+    padding-top: 20px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo {
+    }
+
+    &__score {
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        @include adaptiv-value("gap", 25, 10, 1920);
+        @media (max-width: $breakpoints-medium) {
+            flex-wrap: wrap;
+        }
+
+        .question-category {
+            @include adaptiv-value("font-size", 30, 15, 1920);
+            text-align: center;
+        }
+    }
+}
+.score {
+    @include adaptiv-value("font-size", 35, 15, 1920);
+    &__title {
+    }
+
+    &__points {
+    }
 }
