@@ -1,12 +1,13 @@
 .current-question {
+    @include adaptiv-value("margin-bottom", 50, 15, 1920);
     &__container {
         display: flex;
         @include adaptiv-value("gap", 100, 20, 1920);
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__img {
-        max-width: 300px;
+        max-width: 150px;
 
         border: 0.5px solid black;
         border-radius: 5%;
