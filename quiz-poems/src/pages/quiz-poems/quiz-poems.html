@@ -17,58 +17,145 @@
               alt="logo"
             />
           </div>
+          <nav class="header__nav nav">
+            <div id="category-1" class="nav__item question-category">
+              Category 1
+            </div>
+            <div id="category-2" class="nav__item question-category">
+              Category 2
+            </div>
+            <div id="category-3" class="nav__item question-category">
+              Category 3
+            </div>
+            <div id="category-4" class="nav__item question-category">
+              Category 4
+            </div>
+            <div id="category-5" class="nav__item question-category">
+              Category 5
+            </div>
+          </nav>
           <div class="header__score score">
             <h3 class="score__title">
               Score:
-              <span class="score__points">0</span>
+              <span id="score-points" class="score__points">0</span>
             </h3>
           </div>
         </div>
-        <nav class="header__nav nav">
-          <div id="category-1" class="nav__item question-category">
-            Category 1
-          </div>
-          <div id="category-2" class="nav__item question-category">
-            Category 2
-          </div>
-          <div id="category-3" class="nav__item question-category">
-            Category 3
-          </div>
-          <div id="category-4" class="nav__item question-category">
-            Category 4
-          </div>
-          <div id="category-5" class="nav__item question-category">
-            Category 5
-          </div>
-        </nav>
       </div>
     </header>
     <section class="current-question">
       <div class="current-question__container container">
         <div class="current-question__img">
           <img
+            id="current-question-img"
             class="img"
             src="../../assets/images/image-stub.jpg"
             alt="image current question"
           />
         </div>
         <div class="current-question__info">
-          <h3 class="current-question__title">*******</h3>
+          <h3 id="current-question-title" class="current-question__title">
+            *******
+          </h3>
           <div class="current-question__player player">
-            <audio src="#"></audio>
+            <audio id="audio" src="#"></audio>
             <div class="player__controls">
-              <div class="player__play player-icon">
+              <div id="player-icon" class="player__play player-icon">
                 <img src="../../assets/icons/play.svg" alt="play" />
               </div>
-              <div class="player__timebar timebar">
-                <div class="timebar__line"></div>
-                <div class="timebar__circle"></div>
+              <div id="timebar" class="player__timebar timebar">
+                <div id="timebar-line" class="timebar__line"></div>
+                <div id="timebar-circle" class="timebar__circle"></div>
               </div>
               <div class="timebar__time-info">
-                <div class="timebar-current-time">0:00</div>
-                <div class="timebar-max-time">0:00</div>
+                <div id="timebar-current-time" class="timebar-current-time">
+                  0:00
+                </div>
+                <div id="timebar-max-time" class="timebar-max-time">0:00</div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="answers">
+      <div class="answers__container container">
+        <div class="answers__options">
+          <div class="answer"><span id="answer"></span></div>
+          <div class="answer"><span id="answer"></span></div>
+          <div class="answer"><span id="answer"></span></div>
+          <div class="answer"><span id="answer"></span></div>
+          <div class="answer"><span id="answer"></span></div>
+          <div class="answer"><span id="answer"></span></div>
+        </div>
+
+        <div class="author-description">
+          <div class="author-description__header">
+            <div class="author-description__img">
+              <img
+                id="author-description-img"
+                src="../../assets/images/image-stub.jpg"
+                alt="authors image"
+              />
+            </div>
+
+            <div class="author-description__info">
+              <h5
+                id="author-description-title"
+                class="author-description__title"
+              >
+                *****
+              </h5>
+              <div class="author-description__player player">
+                <audio id="author-audio" src="#"></audio>
+                <div class="player__controls">
+                  <div id="player-play" class="player__play player-icon">
+                    <img src="../../assets/icons/play.svg" alt="play" />
+                  </div>
+                  <div class="player__timebar timebar">
+                    <div class="timebar__line"></div>
+                    <div class="timebar__circle"></div>
+                  </div>
+                  <div class="timebar__time-info">
+                    <div class="timebar-current-time">0:00</div>
+                    <div class="timebar-max-time">0:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="author-description__text">
+            <p id="author-description__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
+              aperiam et! Atque rerum qui accusamus ipsa iusto culpa eum ex,
+              ratione quibusdam inventore at aut veritatis odit, corrupti
+              reprehenderit omnis. Excepturi maiores perspiciatis obcaecati
+              voluptate ipsa, delectus adipisci eius placeat maxime quibusdam
+              quia ut, debitis facere natus nesciunt perferendis facilis
+              inventore nemo. Aliquid harum, atque ut maiores alias maxime sunt.
+              Quas, delectus exercitationem. Aut repellendus eligendi, pariatur
+              quod porro, perspiciatis quis iure facilis sit commodi nesciunt
+              sunt dolor explicabo corrupti ipsam autem animi provident, aliquam
+              tenetur possimus perferendis fugit. Modi. Vitae impedit, ipsa
+              dolorem beatae laudantium eos voluptas. Fugit id iure commodi
+              accusantium distinctio animi consequatur, tempore doloremque
+              cumque ullam cum delectus, excepturi aliquid dolorum odit
+              laboriosam recusandae possimus tenetur! Sapiente eligendi optio
+              esse perferendis labore maiores. Beatae laudantium sunt expedita,
+              sequi voluptas adipisci libero doloribus, possimus eos, dolorum
+              dignissimos corporis tempora voluptatem dolores facere consectetur
+              illum! Quis, facilis obcaecati? Placeat tenetur itaque amet
+              reprehenderit doloribus, consequuntur, inventore molestiae laborum
+              a eligendi odit hic nostrum ipsa. Nihil, excepturi voluptate.
+              Officiis
+            </p>
+            <button
+              onclick="readMore()"
+              class="btn btn__read-more author-description__btn"
+              id="btn-read-more"
+            >
+              Read More
+            </button>
           </div>
         </div>
       </div>
