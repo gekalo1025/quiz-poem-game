@@ -1,4 +1,4 @@
-import poetryData from "./poetry-categories";
+import poetryData from "./poetryCategories";
 import getRandomIntInclusive from "./getRandomIntInclusive";
 
 function choiceQuestion(category) {
