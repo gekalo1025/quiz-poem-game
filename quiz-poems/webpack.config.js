@@ -9,7 +9,7 @@ const BundleAnalyzerPlugin =
 const isProd = process.env.NODE_ENV == "production";
 const isDev = process.env.NODE_ENV == "development";
 
-const pages = ["quiz-poems"];
+const pages = ["quiz-poems", "start-game"];
 
 const config = {
   context: path.resolve(__dirname, "src"),
@@ -34,7 +34,7 @@ const config = {
 
   devServer: {
     port: 8080,
-    open: ["/quiz-poems.html"],
+    open: ["/start-game.html"],
     host: "localhost",
     compress: true,
     hot: isDev,
