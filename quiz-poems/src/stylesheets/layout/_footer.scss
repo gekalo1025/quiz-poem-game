@@ -2,7 +2,7 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-    min-height: 50px;
+    min-height: 30px;
     &__container {
         display: flex;
         @include adaptiv-value("gap", 100, 10, 1920);

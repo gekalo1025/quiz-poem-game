@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.greeting {
+    &__container {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        @include adaptiv-value("gap", 100, 15, 1920);
+    }
+    &__text {
+        @include adaptiv-value("font-size", 60, 18, 1920);
+    }
+    &__image {
+        width: 20%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
