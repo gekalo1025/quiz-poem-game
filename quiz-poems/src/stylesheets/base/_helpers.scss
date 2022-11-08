@@ -40,6 +40,9 @@
     flex-shrink: 0;
   }
 }
+.hidden {
+  display: none;
+}
 
 /**
  * Hide text while making it readable for screen readers

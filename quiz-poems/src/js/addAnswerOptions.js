@@ -1,11 +1,10 @@
 import getRandomIntInclusive from "./getRandomIntInclusive";
-import { currentQuestion } from "../pages/quiz-poems/quiz-poems";
+import { settingGame } from "../pages/quiz-poems/quiz-poems";
 import isCorrectAnswerInList from "./isСorrectAnswerInList";
-
 const answersOptions = document.querySelector(".answers__options");
 
 export default function addAnswersOptions(arrAnswers, quantity) {
-  const correctAuthor = currentQuestion.nameAuthor;
+  const correctAuthor = settingGame.currentQuestion.nameAuthor;
   answersOptions.innerHTML = "";
 
   for (let i = 0; i < quantity; i++) {

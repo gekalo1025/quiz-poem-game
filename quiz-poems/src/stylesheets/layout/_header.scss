@@ -25,7 +25,8 @@
             flex-wrap: wrap;
         }
 
-        .question-category {
+        .question-category,
+        .question {
             @include adaptiv-value("font-size", 30, 15, 1920);
             text-align: center;
         }

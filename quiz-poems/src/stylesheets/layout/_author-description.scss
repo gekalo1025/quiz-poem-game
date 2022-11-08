@@ -1,5 +1,20 @@
 .author-description {
-    filter: blur(3px);
+    // filter: blur(3px);
+    position: relative;
+    &__stub {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #fff9f3;
+        z-index: 2;
+        .stub__text {
+            @include adaptiv-value("font-size", 45, 25, 1920);
+            text-align: center;
+        }
+    }
+
     &__header {
         display: flex;
         gap: 20px;
