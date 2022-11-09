@@ -76,7 +76,7 @@ const poetryData = [
     photo: photoAuthor.SumarokovAleksandrPetrovich,
     title: "Ода",
     categoryPoetry: "classicism",
-    srcAudio: audioPoetr.oda,
+    srcAudio: audioPoetry.oda,
   },
   {
     nameAuthor: "Джон Донн ",
