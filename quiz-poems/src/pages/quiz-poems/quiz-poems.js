@@ -6,7 +6,7 @@ import audioCorrect from "../../assets/audio/zvuk-pravilnogo-otveta.mp3";
 export const settingGame = {
   currentQuestion: null,
   categoryGame: null,
-  numberWrongAnswer: 0,
+  numberWrongAnswer: null,
   score: 0,
   numberQuestionComplite: 0,
 };
@@ -146,6 +146,9 @@ answersOptions.addEventListener("click", (element) => {
     scorePointsAll[1].textContent = settingGame.score;
     settingGame.numberWrongAnswer = 0;
     element.target.style.pointerEvents = "none";
+  }
+  if (nextQuestionBtn.getAttribute("disabled") === null) {
+    showAuthorDescription(element.target.textContent, "wrong");
   } else {
     audioErr.play();
     showAuthorDescription(element.target.textContent, "wrong");
