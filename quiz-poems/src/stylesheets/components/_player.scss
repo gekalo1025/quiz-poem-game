@@ -13,6 +13,14 @@
     }
 
     &__play {
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            svg {
+                fill: $brand-color;
+            }
+        }
     }
 
     &__timebar {
@@ -28,18 +36,9 @@
         border-radius: 15%;
         @include adaptiv-value("height", 5, 2, 1920);
         margin-bottom: 10px;
-    }
-
-    &__circle {
-        position: absolute;
-        top: -25%;
-        left: -1%;
-        background-color: rgb(0, 0, 0);
-        @include adaptiv-value("height", 15, 10, 1920);
-        @include adaptiv-value("width", 15, 10, 1920);
-
-        border-radius: 50%;
-        z-index: 2;
+        &:hover {
+            cursor: grab;
+        }
     }
 
     &__time-info {

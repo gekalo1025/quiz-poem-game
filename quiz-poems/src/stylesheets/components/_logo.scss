@@ -3,4 +3,9 @@
     &__img {
         max-width: 100%;
     }
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $brand-color;
+        border-radius: 20%;
+    }
 }

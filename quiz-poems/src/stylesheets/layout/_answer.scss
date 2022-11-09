@@ -23,18 +23,20 @@
             max-width: 150px;
             position: relative;
             text-align: center;
+            @include adaptiv-value("font-size", 25, 20, 1920);
+            &:hover {
+                cursor: pointer;
+                color: $brand-color;
+            }
 
             &::before {
                 content: "";
                 position: absolute;
-                background-color: rgb(154, 55, 119);
+                background-color: $brand-color;
                 border-radius: 50%;
                 width: 15px;
                 height: 15px;
-                left: 0%;
-                @media (max-width: 400px) {
-                    left: -10%;
-                }
+                left: -10%;
             }
         }
     }
