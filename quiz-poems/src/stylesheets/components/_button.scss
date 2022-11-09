@@ -2,9 +2,29 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .btn {
+    &:disabled {
+        color: rgb(200, 23, 23);
+        cursor: no-drop;
+    }
 }
 .btn__read-more {
     &:hover {
-        background-color: rgb(224, 96, 96);
+        background-color: $brand-color;
     }
+}
+
+.next-question-btn {
+    color: rgb(24, 188, 24);
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    margin: 0 auto;
+    img {
+        width: 20px;
+    }
+    align-items: center;
+    gap: 10px;
 }
