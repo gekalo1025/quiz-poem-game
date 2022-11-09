@@ -3,6 +3,7 @@ import choiceQuestion from "../../js/choiceQuestion";
 export const settingGame = {
   currentQuestion: null,
   categoryGame: null,
+  numberWrongAnswer: 0,
 };
 
 import startGame from "../../js/startGame";
@@ -29,7 +30,7 @@ const maxTime = document.querySelector(
 const timebarLine = document.querySelector(
   ".current-question__player .timebar__line"
 );
-const currentQuestionPlayer = new CurrentQuestionPlayer(
+export const currentQuestionPlayer = new CurrentQuestionPlayer(
   currentQuestionAudio,
   currentQuestionPlayBtn,
   currentTime,
@@ -39,7 +40,15 @@ const currentQuestionPlayer = new CurrentQuestionPlayer(
 
 //////////////////////////
 const headerLogoAll = document.querySelectorAll(".header__logo");
-headerLogoAll[1].addEventListener("click", toggleHiddenBody);
+headerLogoAll[1].addEventListener("click", () => {
+  currentQuestionPlayer.showCurrentAudioDuration(true);
+  currentQuestionPlayer.showAudioDuration(true);
+  if (currentQuestionPlayer.isPlay === true) {
+    currentQuestionPlayer.playAudio();
+    currentQuestionPlayer.toggleBtn();
+  }
+  toggleHiddenBody();
+});
 
 const category = document.querySelector(".header__nav");
 category.addEventListener("click", (element) => {
@@ -60,4 +69,16 @@ currentQuestionAudio.addEventListener("ended", () => {
 
 timebarLine.addEventListener("change", () => {
   currentQuestionPlayer.audioRewind();
+});
+
+////////////////////////
+const answersOptions = document.querySelector(".answers__options");
+
+answersOptions.addEventListener("click", (element) => {
+  if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
+    // появляется кнопка перехода следующего вопроса
+  } else {
+    settingGame.numberWrongAnswer++;
+  }
+  console.log(settingGame.numberWrongAnswer);
 });

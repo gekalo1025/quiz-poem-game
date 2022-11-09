@@ -43,8 +43,12 @@ class Player {
   audioRewind() {
     this.audio.currentTime = this.timebarLine.value;
   }
-  showCurrentAudioDuration() {
+  showCurrentAudioDuration(reset = false) {
     if (this.audio.duration) {
+      if (reset) {
+        this.currentTime.textContent = `0:00`;
+        return;
+      }
       if (this.currentDuration < 60) {
         this.currentTime.textContent = `0:${String(
           this.currentDuration
@@ -57,8 +61,12 @@ class Player {
       }
     }
   }
-  showAudioDuration() {
+  showAudioDuration(reset = false) {
     if (this.audio.duration) {
+      if (reset) {
+        this.maxTime.textContent = `0:00`;
+        return;
+      }
       if (this.audio.duration < 60) {
         this.maxTime.textContent = `0:${Math.round(this.audio.duration)}`;
       }
