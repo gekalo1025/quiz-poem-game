@@ -116,7 +116,7 @@ const config = {
         ],
       },
       {
-        test: /\.(jpe?g|png|jpg|gif|svg)$/i,
+        test: /\.(jpe?g|png|jpg|gif|svg|jfif)$/i,
         type: "asset/resource",
         generator: {
           filename: "images/[hash][ext]",
