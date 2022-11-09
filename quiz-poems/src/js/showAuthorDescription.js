@@ -7,6 +7,7 @@ import getRandomIntInclusive from "./getRandomIntInclusive";
 import poetryData from "./poetryCategories";
 export const authorDescriptionAudio = document.getElementById("author-audio");
 
+const authorDescriptionBtn = document.querySelector(".author-description__btn");
 const authorDescriptionImg = document.querySelector("#author-description-img");
 const authorDescriptionTitle = document.querySelector(
   "#author-description-title"
@@ -35,6 +36,10 @@ export default function showAuthorDescription(nameAuthor, resultAnswer) {
         authorDescriptionImg.src = item.photo;
         authorDescriptionTitle.textContent = item.nameAuthor;
         authorDescriptionText.textContent = item.biography;
+        authorDescriptionBtn.setAttribute(
+          "onclick",
+          `window.open('${item.linkWiki}', '_blank')`
+        );
       }
     });
   }
