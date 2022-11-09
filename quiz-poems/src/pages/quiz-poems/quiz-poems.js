@@ -19,6 +19,8 @@ import {
 export const currentQuestionAudio = document.getElementById(
   "current-question-audio"
 );
+import { authorDescriptionAudio } from "../../js/showAuthorDescription";
+// export const authorDescriptionAudio = document.getElementById("author-audio");
 
 ////////// create player ...
 const currentQuestionPlayBtn = document.querySelector(
@@ -33,12 +35,33 @@ const maxTime = document.querySelector(
 const timebarLine = document.querySelector(
   ".current-question__player .timebar__line"
 );
+
+const authorDescriptionPlayBtn = document.querySelector(
+  ".author-description__player .player__play"
+);
+const authorDescriptionCurrentTime = document.querySelector(
+  ".author-description__player .timebar-current-time"
+);
+const authorDescriptionMaxTime = document.querySelector(
+  ".author-description__player .timebar-max-time"
+);
+const authorDescriptionTimebarLine = document.querySelector(
+  ".author-description__player .timebar__line"
+);
+
 export const currentQuestionPlayer = new CurrentQuestionPlayer(
   currentQuestionAudio,
   currentQuestionPlayBtn,
   currentTime,
   maxTime,
   timebarLine
+);
+export const authorDescriptionPlayer = new AuthorDescriptionPlayer(
+  authorDescriptionAudio,
+  authorDescriptionPlayBtn,
+  authorDescriptionCurrentTime,
+  authorDescriptionMaxTime,
+  authorDescriptionTimebarLine
 );
 
 //////////////////////////
@@ -76,6 +99,20 @@ timebarLine.addEventListener("change", () => {
 });
 
 ////////////////////////
+authorDescriptionPlayBtn.addEventListener("click", () => {
+  console.log(authorDescriptionAudio.src);
+  authorDescriptionPlayer.playAudio();
+  authorDescriptionPlayer.toggleBtn();
+  authorDescriptionPlayer.showAudioDuration();
+});
+authorDescriptionAudio.addEventListener("ended", () => {
+  authorDescriptionPlayer.isPlay = false;
+  authorDescriptionPlayer.toggleBtn();
+});
+
+authorDescriptionTimebarLine.addEventListener("change", () => {
+  authorDescriptionPlayer.audioRewind();
+});
 const answersOptions = document.querySelector(".answers__options");
 const scorePointsAll = document.querySelectorAll(".score__points");
 const nextQuestionBtn = document.querySelector(".next-question-btn");

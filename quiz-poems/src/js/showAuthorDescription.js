@@ -1,5 +1,11 @@
 import { poetryBiography } from "../js/paetryBiography";
-import { settingGame } from "../pages/quiz-poems/quiz-poems";
+import {
+  authorDescriptionPlayer,
+  settingGame,
+} from "../pages/quiz-poems/quiz-poems";
+import getRandomIntInclusive from "./getRandomIntInclusive";
+import poetryData from "./poetryCategories";
+export const authorDescriptionAudio = document.getElementById("author-audio");
 
 const authorDescriptionImg = document.querySelector("#author-description-img");
 const authorDescriptionTitle = document.querySelector(
@@ -12,6 +18,17 @@ const currentQuestionImg = document.getElementById("current-question-img");
 const currentQuestionTitle = document.getElementById("current-question-title");
 
 export default function showAuthorDescription(nameAuthor, resultAnswer) {
+  let arrPoemsAudio = poetryData.filter((item) => {
+    if (
+      item.nameAuthor === nameAuthor &&
+      item.title !== settingGame.currentQuestion.title
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
   if (resultAnswer === "wrong") {
     poetryBiography.forEach((item) => {
       if (item.nameAuthor == nameAuthor) {
@@ -30,4 +47,9 @@ export default function showAuthorDescription(nameAuthor, resultAnswer) {
       }
     });
   }
+  authorDescriptionAudio.src = `${
+    arrPoemsAudio[getRandomIntInclusive(0, arrPoemsAudio.length - 1)].srcAudio
+  }`;
+  authorDescriptionPlayer.showAudioDuration(true);
+  authorDescriptionPlayer.showCurrentAudioDuration(true);
 }
