@@ -54,6 +54,9 @@
                 transform: rotate(20deg);
             }
         }
+        .question.current {
+            color: red;
+        }
     }
 }
 .score {

@@ -129,9 +129,6 @@ answersOptions.addEventListener("click", (element) => {
   authorDescriptionStub.style.display = "none";
 
   if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
-    navQuestionAll[settingGame.numberQuestionComplite].classList.add(
-      "complite"
-    );
     nextQuestionBtn.disabled = false;
 
     showAuthorDescription(element.target.textContent, "correct");
@@ -149,7 +146,15 @@ answersOptions.addEventListener("click", (element) => {
   }
 });
 
+navQuestionAll[settingGame.numberQuestionComplite].classList.add("current");
 nextQuestionBtn.addEventListener("click", () => {
+  navQuestionAll[settingGame.numberQuestionComplite].classList.remove(
+    "current"
+  );
+  navQuestionAll[settingGame.numberQuestionComplite + 1].classList.add(
+    "current"
+  );
+  navQuestionAll[settingGame.numberQuestionComplite].classList.add("complite");
   nextQuestionBtn.disabled = true;
   settingGame.numberQuestionComplite++;
   settingGame.currentQuestion = choiceQuestion(settingGame.categoryGame);
