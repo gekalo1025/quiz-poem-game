@@ -1,6 +1,8 @@
 import "../../stylesheets/main.scss";
 import choiceQuestion from "../../js/choiceQuestion";
 import showAuthorDescription from "../../js/showAuthorDescription";
+import audioError from "../../assets/audio/zvuk-nepravilnogo-otveta.mp3";
+import audioCorrect from "../../assets/audio/zvuk-pravilnogo-otveta.mp3";
 export const settingGame = {
   currentQuestion: null,
   categoryGame: null,
@@ -127,10 +129,15 @@ const navQuestionAll = document.querySelector(
 answersOptions.addEventListener("click", (element) => {
   const maxPointAnswer = 5;
   authorDescriptionStub.style.display = "none";
-
+  const audioErr = new Audio(audioError);
+  const audioСor = new Audio(audioCorrect);
+  audioErr.volume = 0.2;
+  audioСor.volume = 0.2;
   if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
+    audioСor.play();
+    currentQuestionPlayer.playAudio();
+    currentQuestionPlayer.toggleBtn();
     nextQuestionBtn.disabled = false;
-
     showAuthorDescription(element.target.textContent, "correct");
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("correct-answer");
@@ -140,6 +147,7 @@ answersOptions.addEventListener("click", (element) => {
     settingGame.numberWrongAnswer = 0;
     element.target.style.pointerEvents = "none";
   } else {
+    audioErr.play();
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("wrong-answer");
     settingGame.numberWrongAnswer++;
