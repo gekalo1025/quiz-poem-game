@@ -38,9 +38,10 @@
     }
 
     &__title {
+        // font-family: $text-font-stack2;
         text-align: center;
         margin: 0 0 30px 0;
-        @include adaptiv-value("font-size", 15, 10, 1920);
+        @include adaptiv-value("font-size", 25, 15, 1920);
         @include adaptiv-value("letter-spacing", 5, 0, 1920);
     }
 
@@ -59,6 +60,8 @@
         display: flex;
         flex-direction: column;
         height: auto;
+        @include adaptiv-value("font-size", 20, 16, 1920);
+        font-family: $text-font-stack2;
         p {
             margin-bottom: 5px;
         }

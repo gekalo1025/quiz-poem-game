@@ -25,7 +25,8 @@
             max-width: 150px;
             position: relative;
             text-align: center;
-            @include adaptiv-value("font-size", 25, 20, 1920);
+            font-family: $text-font-stack2;
+            @include adaptiv-value("font-size", 20, 15, 1920);
             &:hover {
                 cursor: pointer;
                 color: $brand-color;

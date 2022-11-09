@@ -14,13 +14,14 @@
 }
 
 .next-question-btn {
+    font-family: $text-font-stack2;
     color: rgb(24, 188, 24);
     cursor: pointer;
     display: flex;
     outline: none;
     background: transparent;
     border: none;
-    font-size: 30px;
+    @include adaptiv-value("font-size", 35, 25, 1920);
     margin: 0 auto;
     img {
         width: 20px;

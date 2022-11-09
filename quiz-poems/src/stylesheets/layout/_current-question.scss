@@ -35,7 +35,7 @@
     }
 
     &__title {
-        @include adaptiv-value("font-size", 35, 15, 1920);
+        @include adaptiv-value("font-size", 35, 20, 1920);
         @include adaptiv-value("letter-spacing", 10, 0, 1920);
         text-align: center;
         margin: 0 0 15px 0;
