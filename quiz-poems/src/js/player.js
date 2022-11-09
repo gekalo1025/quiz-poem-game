@@ -14,8 +14,12 @@ class Player {
 
   playAudio() {
     if (!this.isPlay) {
-      this.audio.currentTime = 0;
-      this.audio.play();
+      if (this.currentDuration > 0) {
+        this.audio.currentTime = this.currentDuration;
+        this.audio.play();
+      } else {
+        this.audio.play();
+      }
       this.isPlay = true;
       this.currentTimeAudio();
     } else {
