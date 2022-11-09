@@ -19,10 +19,11 @@
         flex: 0 1 25%;
 
         img {
+            border-radius: 5%;
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             min-width: 100px;
-            // object-fit: contain;
         }
     }
 

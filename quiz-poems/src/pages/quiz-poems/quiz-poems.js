@@ -1,9 +1,12 @@
 import "../../stylesheets/main.scss";
 import choiceQuestion from "../../js/choiceQuestion";
+import showAuthorDescription from "../../js/showAuthorDescription";
 export const settingGame = {
   currentQuestion: null,
   categoryGame: null,
   numberWrongAnswer: 0,
+  score: 0,
+  numberQuestionComplite: 0,
 };
 
 import startGame from "../../js/startGame";
@@ -41,13 +44,14 @@ export const currentQuestionPlayer = new CurrentQuestionPlayer(
 //////////////////////////
 const headerLogoAll = document.querySelectorAll(".header__logo");
 headerLogoAll[1].addEventListener("click", () => {
-  currentQuestionPlayer.showCurrentAudioDuration(true);
-  currentQuestionPlayer.showAudioDuration(true);
-  if (currentQuestionPlayer.isPlay === true) {
-    currentQuestionPlayer.playAudio();
-    currentQuestionPlayer.toggleBtn();
-  }
-  toggleHiddenBody();
+  location.reload();
+  // currentQuestionPlayer.showCurrentAudioDuration(true);
+  // currentQuestionPlayer.showAudioDuration(true);
+  // if (currentQuestionPlayer.isPlay === true) {
+  //   currentQuestionPlayer.playAudio();
+  //   currentQuestionPlayer.toggleBtn();
+  // }
+  // toggleHiddenBody();
 });
 
 const category = document.querySelector(".header__nav");
@@ -73,12 +77,44 @@ timebarLine.addEventListener("change", () => {
 
 ////////////////////////
 const answersOptions = document.querySelector(".answers__options");
+const scorePointsAll = document.querySelectorAll(".score__points");
+const nextQuestionBtn = document.querySelector(".next-question-btn");
+const authorDescriptionStub = document.querySelector(
+  ".author-description__stub"
+);
+
+const navQuestionAll = document.querySelector(
+  ".body-quiz-poems .header__nav"
+).children;
 
 answersOptions.addEventListener("click", (element) => {
+  const maxPointAnswer = 5;
+  authorDescriptionStub.style.display = "none";
+
   if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
-    // появляется кнопка перехода следующего вопроса
+    navQuestionAll[settingGame.numberQuestionComplite].classList.add(
+      "complite"
+    );
+    nextQuestionBtn.disabled = false;
+
+    showAuthorDescription(element.target.textContent, "correct");
+    showAuthorDescription(element.target.textContent, "wrong");
+    element.target.classList.add("correct-answer");
+    settingGame.score += maxPointAnswer - settingGame.numberWrongAnswer;
+    scorePointsAll[0].textContent = settingGame.score;
+    scorePointsAll[1].textContent = settingGame.score;
+    settingGame.numberWrongAnswer = 0;
+    element.target.style.pointerEvents = "none";
   } else {
+    showAuthorDescription(element.target.textContent, "wrong");
+    element.target.classList.add("wrong-answer");
     settingGame.numberWrongAnswer++;
   }
-  console.log(settingGame.numberWrongAnswer);
+});
+
+nextQuestionBtn.addEventListener("click", () => {
+  nextQuestionBtn.disabled = true;
+  settingGame.numberQuestionComplite++;
+  settingGame.currentQuestion = choiceQuestion(settingGame.categoryGame);
+  startGame();
 });

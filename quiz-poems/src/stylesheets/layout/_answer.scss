@@ -1,9 +1,11 @@
 .answers {
     margin-bottom: 50px;
     &__container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         gap: 50px;
+        margin-bottom: 20px;
         @media (max-width: $breakpoints-medium) {
             flex-direction: column;
             align-items: left;
@@ -37,6 +39,17 @@
                 width: 15px;
                 height: 15px;
                 left: -10%;
+            }
+
+            &.wrong-answer {
+                &::before {
+                    background-color: rgb(177, 23, 23);
+                }
+            }
+            &.correct-answer {
+                &::before {
+                    background-color: green;
+                }
             }
         }
     }

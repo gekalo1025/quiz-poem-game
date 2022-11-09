@@ -24,6 +24,7 @@
         @media (max-width: $breakpoints-medium) {
             flex-wrap: wrap;
         }
+
         .question-category {
             &:hover {
                 cursor: pointer;
@@ -35,6 +36,23 @@
         .question {
             @include adaptiv-value("font-size", 40, 20, 1920);
             text-align: center;
+        }
+        .question {
+            min-width: 10px;
+        }
+
+        .question.complite {
+            // background-color: red;
+            position: relative;
+            &:before {
+                content: "";
+                border-bottom: 3px solid rgb(154, 55, 119);
+                position: absolute;
+                width: 200%;
+                height: 42%;
+                left: -50%;
+                transform: rotate(20deg);
+            }
         }
     }
 }
