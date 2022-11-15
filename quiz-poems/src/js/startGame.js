@@ -8,6 +8,7 @@ import cleanTitle from "./cleanTitle";
 
 function startGame() {
   cleanTitle();
+  settingGame.counterClickError = 0;
   settingGame.numberWrongAnswer = 0;
   currentQuestionAudio.src = settingGame.currentQuestion.srcAudio;
   addAnswersOptions(choiceAnswer(settingGame.categoryGame), 6);

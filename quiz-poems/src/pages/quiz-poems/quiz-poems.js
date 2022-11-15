@@ -1,7 +1,8 @@
 import "../../stylesheets/main.scss";
 import choiceQuestion from "../../js/choiceQuestion";
 import showAuthorDescription from "../../js/showAuthorDescription";
-import audioError from "../../assets/audio/zvuk-nepravilnogo-otveta.mp3";
+import audioError1 from "../../assets/audio/zvuk-nepravilnogo-otveta1-2.mp3";
+import audioError2 from "../../assets/audio/zvuk-nepravilnogo-otveta2-2.mp3";
 import audioCorrect from "../../assets/audio/zvuk-pravilnogo-otveta.mp3";
 export const settingGame = {
   currentQuestion: null,
@@ -10,6 +11,7 @@ export const settingGame = {
   score: 0,
   numberQuestionComplite: 0,
   passedQuestions: [],
+  counterClickError: 0,
 };
 
 import startGame from "../../js/startGame";
@@ -149,12 +151,11 @@ const navQuestionAll = document.querySelector(
 ).children;
 
 answersOptions.addEventListener("click", (element) => {
+  const audioErrorArr = [audioError1, audioError2];
   const maxPointAnswer = 5;
   authorDescriptionStub.style.display = "none";
-  const audioErr = new Audio(audioError);
+  const audioErr = new Audio(audioErrorArr[settingGame.counterClickError]);
   const audioСor = new Audio(audioCorrect);
-  audioErr.volume = 0.2;
-  audioСor.volume = 0.2;
   if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
     audioСor.play();
     currentQuestionPlayer.playAudio();
@@ -176,6 +177,11 @@ answersOptions.addEventListener("click", (element) => {
     authorDescriptionPlayer.toggleBtn();
   } else {
     audioErr.play();
+    if (settingGame.counterClickError === 1) {
+      settingGame.counterClickError = 0;
+    } else {
+      settingGame.counterClickError++;
+    }
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("wrong-answer");
     settingGame.numberWrongAnswer++;
@@ -261,5 +267,5 @@ currentQuestionMuteButton.addEventListener("click", () => {
   }
   currentQuestionPlayer.setVolume();
 });
-
 document.addEventListener("scroll", showScrollArrow);
+showScrollArrow();
