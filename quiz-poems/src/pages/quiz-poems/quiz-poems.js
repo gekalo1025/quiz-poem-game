@@ -13,6 +13,7 @@ export const settingGame = {
 };
 
 import startGame from "../../js/startGame";
+import upScroll from "../../js/upScroll";
 import toggleHiddenBody from "../../js/toggleHiddenBody";
 import {
   CurrentQuestionPlayer,
@@ -187,6 +188,7 @@ answersOptions.addEventListener("click", (element) => {
 navQuestionAll[settingGame.numberQuestionComplite].classList.add("current");
 
 nextQuestionBtn.addEventListener("click", () => {
+  upScroll();
   // magic  number - amount question
   if (settingGame.numberQuestionComplite === 9) {
     document.querySelector(".body-quiz-poems").classList.add("hidden");
