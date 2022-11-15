@@ -1,7 +1,10 @@
 .player-icon {
     @include adaptiv-value("width", 50, 20, 1920);
+    transform: translateY(10%);
     img {
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 .player {
@@ -24,19 +27,24 @@
     }
 
     &__timebar {
-        flex: 1 1 auto;
+        flex: 1 1 100%;
+
         align-items: center;
     }
 }
 .timebar {
     position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     &__line {
         appearance: none;
         width: 100%;
         background-color: grey;
         border-radius: 15%;
         @include adaptiv-value("height", 5, 2, 1920);
-        margin-bottom: 10px;
         &:hover {
             cursor: pointer;
         }
@@ -58,16 +66,59 @@
         }
     }
 
-    &__time-info {
+    &__info {
         flex-basis: 100%;
         display: flex;
         justify-content: space-between;
-        @include adaptiv-value("font-size", 25, 10, 1920);
-        .timebar-current-time {
-            position: relative;
-            left: 8%;
+        align-items: center;
+        gap: 10px;
+        .timebar__info-time {
+            display: flex;
+            @include adaptiv-value("font-size", 25, 15, 1920);
+            .timebar-current-time {
+            }
+            .timebar-max-time {
+            }
         }
-        .timebar-max-time {
+
+        .player__volume-slider {
+        }
+    }
+}
+
+.volume {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    &__img {
+        cursor: pointer;
+        @include adaptiv-value("width", 20, 14, 1920);
+    }
+
+    &__input {
+        cursor: pointer;
+        margin-bottom: 0px;
+        appearance: none;
+        width: 100%;
+        background-color: grey;
+        border-radius: 15%;
+        @include adaptiv-value("height", 5, 2, 1920);
+        &::-webkit-slider-runnable-track {
+            border-radius: 10px;
+            height: 5px;
+            border: 1px solid black;
+            background-color: $background-color;
+        }
+        &::-webkit-slider-thumb {
+            cursor: grab;
+            appearance: none;
+            background: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin-left: -1px;
+            margin-top: -3px;
         }
     }
 }

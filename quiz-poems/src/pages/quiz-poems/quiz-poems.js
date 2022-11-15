@@ -37,6 +37,12 @@ const maxTime = document.querySelector(
 const timebarLine = document.querySelector(
   ".current-question__player .timebar__line"
 );
+const currentQuestionVolumeSlider = document.querySelector(
+  ".current-question__player .volume__input"
+);
+const currentQuestionMuteButton = document.querySelector(
+  ".current-question__player .volume__img"
+);
 
 const authorDescriptionPlayBtn = document.querySelector(
   ".author-description__player .player__play"
@@ -50,20 +56,30 @@ const authorDescriptionMaxTime = document.querySelector(
 const authorDescriptionTimebarLine = document.querySelector(
   ".author-description__player .timebar__line"
 );
+const authorDescriptionVolumeSlider = document.querySelector(
+  ".author-description__player .volume__input"
+);
+const authorDescriptionMuteButton = document.querySelector(
+  ".author-description__player .volume__img"
+);
 
 export const currentQuestionPlayer = new CurrentQuestionPlayer(
   currentQuestionAudio,
   currentQuestionPlayBtn,
   currentTime,
   maxTime,
-  timebarLine
+  timebarLine,
+  currentQuestionVolumeSlider,
+  currentQuestionMuteButton
 );
 export const authorDescriptionPlayer = new AuthorDescriptionPlayer(
   authorDescriptionAudio,
   authorDescriptionPlayBtn,
   authorDescriptionCurrentTime,
   authorDescriptionMaxTime,
-  authorDescriptionTimebarLine
+  authorDescriptionTimebarLine,
+  authorDescriptionVolumeSlider,
+  authorDescriptionMuteButton
 );
 
 //////////////////////////
@@ -195,4 +211,37 @@ nextQuestionBtn.addEventListener("click", () => {
   if (settingGame.numberQuestionComplite === 9) {
     nextQuestionBtn.textContent = "Show result";
   }
+});
+
+const volumeInputCurrentQuestion = document.querySelector(
+  ".current-question__player .volume__input"
+);
+const volumeInputAuthorDescriptionPlayer = document.querySelector(
+  ".author-description__player .volume__input"
+);
+
+volumeInputCurrentQuestion.addEventListener("input", () => {
+  currentQuestionPlayer.setVolume();
+});
+volumeInputAuthorDescriptionPlayer.addEventListener("input", () => {
+  authorDescriptionPlayer.setVolume();
+});
+
+authorDescriptionMuteButton.addEventListener("click", () => {
+  authorDescriptionMuteButton.classList.toggle("mute");
+  if (authorDescriptionMuteButton.classList.contains("mute")) {
+    authorDescriptionVolumeSlider.value = "0";
+  } else {
+    authorDescriptionVolumeSlider.value = "0.5";
+  }
+  authorDescriptionPlayer.setVolume();
+});
+currentQuestionMuteButton.addEventListener("click", () => {
+  currentQuestionMuteButton.classList.toggle("mute");
+  if (currentQuestionMuteButton.classList.contains("mute")) {
+    currentQuestionVolumeSlider.value = "0";
+  } else {
+    currentQuestionVolumeSlider.value = "0.5";
+  }
+  currentQuestionPlayer.setVolume();
 });

@@ -1,8 +1,18 @@
 import imgPause from "../assets/icons/pause.svg";
 import imgPlay from "../assets/icons/play.svg";
+import imgVolume from "../assets/icons/sound-on.svg";
+import imgMute from "../assets/icons/mute.svg";
 
 class Player {
-  constructor(audio, btnPlay, currentTime, maxTime, timebarLine) {
+  constructor(
+    audio,
+    btnPlay,
+    currentTime,
+    maxTime,
+    timebarLine,
+    volumeSlider,
+    muteButton
+  ) {
     this.currentDuration = 0;
     this.isPlay = false;
     this.audio = audio;
@@ -10,6 +20,8 @@ class Player {
     this.currentTime = currentTime;
     this.maxTime = maxTime;
     this.timebarLine = timebarLine;
+    this.volumeSlider = volumeSlider;
+    this.muteButton = muteButton;
   }
 
   playAudio() {
@@ -81,16 +93,66 @@ class Player {
       }
     }
   }
+  setVolume() {
+    this.volumeSlider.min = 0;
+    this.volumeSlider.max = 1;
+    this.volumeSlider.step = 0.1;
+    this.audio.volume = this.volumeSlider.value;
+    if (this.volumeSlider.value <= 0.05) {
+      this.muteButton.classList.add("mute");
+      this.muteButton.src = imgMute;
+    } else {
+      this.muteButton.classList.remove("mute");
+    }
+    if (
+      this.volumeSlider.value > 0.05 &&
+      this.muteButton.classList.contains("mute") == false
+    ) {
+      this.muteButton.src = imgVolume;
+    }
+  }
 }
 
 export class CurrentQuestionPlayer extends Player {
-  constructor(audio, btnPlay, currentTime, maxTime, timebarLine) {
-    super(audio, btnPlay, currentTime, maxTime, timebarLine);
+  constructor(
+    audio,
+    btnPlay,
+    currentTime,
+    maxTime,
+    timebarLine,
+    volumeSlider,
+    muteButton
+  ) {
+    super(
+      audio,
+      btnPlay,
+      currentTime,
+      maxTime,
+      timebarLine,
+      volumeSlider,
+      muteButton
+    );
   }
 }
 
 export class AuthorDescriptionPlayer extends Player {
-  constructor(audio, btnPlay, currentTime, maxTime, timebarLine) {
-    super(audio, btnPlay, currentTime, maxTime, timebarLine);
+  constructor(
+    audio,
+    btnPlay,
+    currentTime,
+    maxTime,
+    timebarLine,
+    volumeSlider,
+    muteButton
+  ) {
+    super(
+      audio,
+      btnPlay,
+      currentTime,
+      maxTime,
+      timebarLine,
+      volumeSlider,
+      muteButton
+    );
   }
 }
