@@ -34,6 +34,9 @@ const config = {
   },
 
   devServer: {
+    devMiddleware: {
+      writeToDisk: true,
+    },
     port: 8080,
     open: ["/quiz-poems.html"],
     host: "localhost",

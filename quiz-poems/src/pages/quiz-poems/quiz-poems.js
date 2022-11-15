@@ -78,6 +78,9 @@ headerLogoAll[1].addEventListener("click", () => {
   // }
   // toggleHiddenBody();
 });
+headerLogoAll[2].addEventListener("click", () => {
+  location.reload();
+});
 
 const category = document.querySelector(".header__nav");
 category.addEventListener("click", (element) => {
@@ -144,6 +147,7 @@ answersOptions.addEventListener("click", (element) => {
     settingGame.score += maxPointAnswer - settingGame.numberWrongAnswer;
     scorePointsAll[0].textContent = settingGame.score;
     scorePointsAll[1].textContent = settingGame.score;
+    scorePointsAll[2].textContent = settingGame.score;
     settingGame.numberWrongAnswer = 0;
     element.target.style.pointerEvents = "none";
   }
@@ -158,16 +162,37 @@ answersOptions.addEventListener("click", (element) => {
 });
 
 navQuestionAll[settingGame.numberQuestionComplite].classList.add("current");
+
 nextQuestionBtn.addEventListener("click", () => {
-  navQuestionAll[settingGame.numberQuestionComplite].classList.remove(
-    "current"
-  );
-  navQuestionAll[settingGame.numberQuestionComplite + 1].classList.add(
-    "current"
-  );
-  navQuestionAll[settingGame.numberQuestionComplite].classList.add("complite");
-  nextQuestionBtn.disabled = true;
-  settingGame.numberQuestionComplite++;
-  settingGame.currentQuestion = choiceQuestion(settingGame.categoryGame);
-  startGame();
+  // magic  number - amount question
+  if (settingGame.numberQuestionComplite === 9) {
+    document.querySelector(".body-quiz-poems").classList.add("hidden");
+    document.querySelector(".body-results").classList.remove("hidden");
+    if (settingGame.score >= 50) {
+      document.querySelector(
+        ".result__text"
+      ).innerHTML = `Поздравляем! Вы победили в викторине набрав максимальное количество
+        баллов! <a href="./quiz-poems.html" class="result__btn"> Желаете сыграть еще ?</a>`;
+    }
+    document.querySelector(".result__current-score").textContent =
+      settingGame.score;
+  }
+  if (settingGame.numberQuestionComplite < 9) {
+    navQuestionAll[settingGame.numberQuestionComplite].classList.remove(
+      "current"
+    );
+    navQuestionAll[settingGame.numberQuestionComplite + 1].classList.add(
+      "current"
+    );
+    settingGame.numberQuestionComplite++;
+    nextQuestionBtn.disabled = true;
+    settingGame.currentQuestion = choiceQuestion(settingGame.categoryGame);
+    navQuestionAll[settingGame.numberQuestionComplite - 1].classList.add(
+      "complite"
+    );
+    startGame();
+  }
+  if (settingGame.numberQuestionComplite === 9) {
+    nextQuestionBtn.textContent = "Show result";
+  }
 });

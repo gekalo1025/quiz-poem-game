@@ -1,0 +1,16 @@
+.result {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        @include adaptiv-value("font-size", 36, 17, 1920);
+    }
+
+    &__current-score {
+        font-family: $text-font-stack2;
+        color: $brand-color;
+    }
+
+    &__btn {
+    }
+}
