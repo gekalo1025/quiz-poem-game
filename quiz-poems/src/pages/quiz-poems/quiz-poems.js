@@ -157,7 +157,10 @@ answersOptions.addEventListener("click", (element) => {
   authorDescriptionStub.style.display = "none";
   const audioErr = new Audio(audioErrorArr[settingGame.counterClickError]);
   const audioСor = new Audio(audioCorrect);
-  if (element.target.textContent === settingGame.currentQuestion.nameAuthor) {
+  if (
+    element.target.textContent === settingGame.currentQuestion.nameAuthor &&
+    nextQuestionBtn.getAttribute("disabled") !== null
+  ) {
     audioСor.play();
     currentQuestionPlayer.playAudio();
     currentQuestionPlayer.toggleBtn();
@@ -170,7 +173,6 @@ answersOptions.addEventListener("click", (element) => {
     scorePointsAll[1].textContent = settingGame.score;
     scorePointsAll[2].textContent = settingGame.score;
     settingGame.numberWrongAnswer = 0;
-    element.target.style.pointerEvents = "none";
   }
   if (nextQuestionBtn.getAttribute("disabled") === null) {
     showAuthorDescription(element.target.textContent, "wrong");
