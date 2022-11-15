@@ -70,16 +70,17 @@ const authorDescriptionMuteButton = document.querySelector(
 
 export const currentQuestionPlayer = new CurrentQuestionPlayer(
   currentQuestionAudio,
-  currentQuestionPlayBtn,
+  document.querySelector(".current-question__player .player__play img"),
   currentTime,
   maxTime,
   timebarLine,
   currentQuestionVolumeSlider,
   currentQuestionMuteButton
 );
+
 export const authorDescriptionPlayer = new AuthorDescriptionPlayer(
   authorDescriptionAudio,
-  authorDescriptionPlayBtn,
+  document.querySelector(".author-description__player .player__play img"),
   authorDescriptionCurrentTime,
   authorDescriptionMaxTime,
   authorDescriptionTimebarLine,

@@ -42,10 +42,10 @@ class Player {
   toggleBtn() {
     if (this.isPlay) {
       this.btnPlay.classList.remove("pause");
-      this.btnPlay.childNodes[1].src = imgPause;
+      this.btnPlay.src = imgPause;
     } else {
       this.btnPlay.classList.add("pause");
-      this.btnPlay.childNodes[1].src = imgPlay;
+      this.btnPlay.src = imgPlay;
     }
   }
   currentTimeAudio() {
