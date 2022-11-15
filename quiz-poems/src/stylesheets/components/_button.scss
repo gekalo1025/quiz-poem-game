@@ -29,3 +29,27 @@
     align-items: center;
     gap: 10px;
 }
+
+.down-arrow {
+    position: fixed;
+    display: block;
+    @include adaptiv-value("width", 50, 25, 1920);
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 1%;
+    z-index: 5;
+    animation: 0.5s linear 0s infinite alternate moveDownArrow;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+@keyframes moveDownArrow {
+    0% {
+        bottom: 1%;
+    }
+    100% {
+        bottom: 3%;
+    }
+}

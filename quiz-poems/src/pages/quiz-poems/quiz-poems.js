@@ -23,6 +23,7 @@ export const currentQuestionAudio = document.getElementById(
   "current-question-audio"
 );
 import { authorDescriptionAudio } from "../../js/showAuthorDescription";
+import showScrollArrow from "../../js/showScrollArrow";
 // export const authorDescriptionAudio = document.getElementById("author-audio");
 
 ////////// create player ...
@@ -219,7 +220,6 @@ nextQuestionBtn.addEventListener("click", () => {
     navQuestionAll[settingGame.numberQuestionComplite - 1].classList.add(
       "complite"
     );
-    console.log(settingGame.passedQuestions);
     startGame();
   }
   if (settingGame.numberQuestionComplite === 9) {
@@ -259,3 +259,5 @@ currentQuestionMuteButton.addEventListener("click", () => {
   }
   currentQuestionPlayer.setVolume();
 });
+
+document.addEventListener("scroll", showScrollArrow);
