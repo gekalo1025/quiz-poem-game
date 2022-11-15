@@ -36,7 +36,7 @@ export const poetryBiography = [
       "https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BC%D0%BE%D0%BD%D0%BE%D1%81%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
   },
   {
-    nameAuthor: "А. П. Сумароков ",
+    nameAuthor: "А. П. Сумароков",
     photo:
       "./static/images/photo-author/classicism/Sumarokov_Aleksandr_Petrovich.jpg",
     biography: `Алекса́ндр Петро́вич Сумаро́ков (14 [25] ноября 1717, Вильманстранд (ныне Лаппеэнранта) — 1 [12] октября 1777, Москва) — русский поэт, драматург и литературный критик. Один из крупнейших представителей русской литературы XVIII века.
@@ -50,7 +50,7 @@ export const poetryBiography = [
       "https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%BC%D0%B0%D1%80%D0%BE%D0%BA%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87",
   },
   {
-    nameAuthor: "Джон Донн ",
+    nameAuthor: "Джон Донн",
     photo: "./static/images/photo-author/classicism/John-Donne.jpg",
     biography: `Джон Донн (англ. John Donne [dʌn][2]; род. между 24 января и 19 июня 1572 года[3], возможно 12 февраля 1572 года[4], Лондон — ум. 31 марта 1631 года, там же) — английский поэт и проповедник, настоятель лондонского собора Святого Павла, крупнейший представитель литературы английского барокко («метафизическая школа»). Автор ряда любовных стихов, элегий, сонетов, эпиграмм, а также религиозных проповедей.`,
     linkWiki:
@@ -81,7 +81,7 @@ export const poetryBiography = [
       "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%B0%D0%BD%D0%B6%D0%B5,_%D0%9F%D1%8C%D0%B5%D1%80-%D0%96%D0%B0%D0%BD_%D0%B4%D0%B5",
   },
   {
-    nameAuthor: "Пьер де Ронсар ",
+    nameAuthor: "Пьер де Ронсар",
     photo: "./static/images/photo-author/classicism/PierredeRonsard.jpg",
     biography: `Пьер де Ронса́р (фр. Pierre de Ronsard; между 1 сентября и 11 сентября 1524, замок Ла-Поссоньер, Вандомуа — 27 декабря 1585, аббатство Сен-Ком, близ Тура) — французский поэт XVI века. Возглавлял объединение «Плеяда», проповедовавшее обогащение национальной поэзии путём изучения греческой и римской литературы.`,
     linkWiki:
