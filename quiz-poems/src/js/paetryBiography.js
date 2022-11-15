@@ -73,7 +73,7 @@ export const poetryBiography = [
       "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BD%D1%82-%D0%90%D0%BC%D0%B0%D0%BD,_%D0%9C%D0%B0%D1%80%D0%BA-%D0%90%D0%BD%D1%82%D1%83%D0%B0%D0%BD_%D0%96%D0%B8%D1%80%D0%B0%D1%80_%D0%B4%D0%B5",
   },
   {
-    nameAuthor: "Пьер-Жан де Беранж ",
+    nameAuthor: "Пьер-Жан де Беранжe",
     photo:
       "./static/images/photo-author/classicism/Pierre-Jean_de_Béranger.jpg",
     biography: `Пьер-Жан де Беранже́ (фр. Pierre-Jean de Béranger, 19 августа 1780, Париж — 16 июля 1857, там же) — французский поэт и сочинитель песен, известный прежде всего своими сатирическими произведениями.`,

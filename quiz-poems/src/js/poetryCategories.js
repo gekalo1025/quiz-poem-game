@@ -1,5 +1,4 @@
 // realism
-// classicism
 // sentimentalism
 // romanticism
 // modernism
@@ -55,92 +54,83 @@ const poetryData = [
     srcAudio:
       "./static/audio/audio-poetry/classicism/oda-na-den-vossestviya-na-vserossiiskii-prestol-eyo.mp3",
   },
+
+  ////////////добавить еще один стих сумароков
+  // {
+  //   nameAuthor: "А. П. Сумароков",
+  //   title: "Ода",
+  //   categoryPoetry: "classicism",
+  //   srcAudio: "./static/audio/audio-poetry/classicism/oda.mp3",
+  // },
   {
-    nameAuthor: "А. П. Сумароков ",
-    title: "Ода",
-    categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/oda.mp3",
-  },
-  {
-    nameAuthor: "Джон Донн ",
+    nameAuthor: "Джон Донн",
     title: "Блоха",
     categoryPoetry: "classicism",
     srcAudio:
       "./static/audio/audio-poetry/classicism/bloxa-stixotvorenie-dzona-donna-v-perevode-iosifa-brodskogo_lwz5Af9S.mp3",
   },
   {
-    nameAuthor: "Джон Донн ",
+    nameAuthor: "Джон Донн",
     title: "Образ любимой",
     categoryPoetry: "classicism",
     srcAudio:
       "./static/audio/audio-poetry/classicism/donn-krasivyi-stix-o-lyubvi-obraz-lyubimoi (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Джон Донн ",
+    nameAuthor: "Джон Донн",
     title: "Портрет",
     categoryPoetry: "classicism",
     srcAudio:
       "./static/audio/audio-poetry/classicism/donn-stixotvorenie-o-lyubvi-portret (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "А. Д. Кантемир",
-    title: "Сатира V",
-    categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
-  },
-  {
-    nameAuthor: "А. Д. Кантемир",
-    title: "На человеческие злонравия вообще",
-    categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
-  },
-  {
-    nameAuthor: "Антуан де Сент-Аман",
-    title: "Видения",
-    categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
-  },
-  {
-    nameAuthor: "Пьер-Жан де Беранж ",
+    nameAuthor: "Пьер-Жан де Беранжe",
     title: "Чердак",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/beranze-krasivoe-stixotvorenie-cerdak (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Пьер-Жан де Беранж ",
+    nameAuthor: "Пьер-Жан де Беранжe",
     title: "Марионетки",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/beranze-stixotvorenie-marionetki (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Пьер-Жан де Беранж ",
-    title: "Пузан на выборах",
+    nameAuthor: "Пьер-Жан де Беранжe",
+    title: "Пузан на выборах 1819 года",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/beranze-satiriceskoe-stix-e-o-vyborax (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Пьер-Жан де Беранж ",
-    title: "Начнем сызнова",
+    nameAuthor: "Пьер-Жан де Беранжe",
+    title: "Пьяница и его жена",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/per-zan-beranze-pyanica-i-ego-zena (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Пьер-Жан де Беранж ",
+    nameAuthor: "Пьер-Жан де Беранжe",
     title: "Я с вами больше не знаком",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/per-zan-beranze-ya-s-vami-bolse-ne-znakom (mp3cut.net).mp3",
   },
   {
-    nameAuthor: "Пьер де Ронсар ",
-    title: "Я высох до костей",
+    nameAuthor: "Пьер де Ронсар",
+    title: "Я высох до костей. К порогу тьмы и хлада",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/de-ronsar-grustnoe-stixotvorenie-o-smerti_RFk63IpF.mp3",
   },
   {
-    nameAuthor: "Пьер де Ронсар ",
-    title: "Когда средь шума",
+    nameAuthor: "Пьер де Ронсар",
+    title: "Когда средь шума бытия",
     categoryPoetry: "classicism",
-    srcAudio: "./static/audio/audio-poetry/classicism/",
+    srcAudio:
+      "./static/audio/audio-poetry/classicism/per-de-ronsar-kogda-sred-suma-bytiya.mp3",
   },
 ];
 
