@@ -8,7 +8,7 @@
         margin-bottom: 20px;
         @media (max-width: $breakpoints-medium) {
             flex-direction: column;
-            align-items: left;
+            align-items: center;
         }
     }
     &__options {
@@ -39,7 +39,7 @@
                 border-radius: 50%;
                 width: 15px;
                 height: 15px;
-                left: -10%;
+                left: -13%;
             }
 
             &.wrong-answer {
