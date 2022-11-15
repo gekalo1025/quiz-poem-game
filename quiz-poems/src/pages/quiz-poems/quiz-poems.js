@@ -9,6 +9,7 @@ export const settingGame = {
   numberWrongAnswer: null,
   score: 0,
   numberQuestionComplite: 0,
+  passedQuestions: [],
 };
 
 import startGame from "../../js/startGame";
@@ -102,6 +103,7 @@ const category = document.querySelector(".header__nav");
 category.addEventListener("click", (element) => {
   settingGame.categoryGame = element.target.id;
   settingGame.currentQuestion = choiceQuestion(element.target.id);
+  settingGame.passedQuestions.push(settingGame.currentQuestion);
   startGame();
   toggleHiddenBody();
 });
@@ -121,7 +123,6 @@ timebarLine.addEventListener("change", () => {
 
 ////////////////////////
 authorDescriptionPlayBtn.addEventListener("click", () => {
-  console.log(authorDescriptionAudio.src);
   authorDescriptionPlayer.playAudio();
   authorDescriptionPlayer.toggleBtn();
   authorDescriptionPlayer.showAudioDuration();
@@ -169,11 +170,16 @@ answersOptions.addEventListener("click", (element) => {
   }
   if (nextQuestionBtn.getAttribute("disabled") === null) {
     showAuthorDescription(element.target.textContent, "wrong");
+    authorDescriptionPlayer.isPlay = false;
+    authorDescriptionPlayer.toggleBtn();
   } else {
     audioErr.play();
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("wrong-answer");
     settingGame.numberWrongAnswer++;
+
+    authorDescriptionPlayer.isPlay = false;
+    authorDescriptionPlayer.toggleBtn();
   }
 });
 
@@ -192,6 +198,12 @@ nextQuestionBtn.addEventListener("click", () => {
     }
     document.querySelector(".result__current-score").textContent =
       settingGame.score;
+    if (currentQuestionPlayer.isPlay) {
+      currentQuestionPlayer.playAudio();
+    }
+    if (authorDescriptionPlayer.isPlay) {
+      authorDescriptionPlayer.playAudio();
+    }
   }
   if (settingGame.numberQuestionComplite < 9) {
     navQuestionAll[settingGame.numberQuestionComplite].classList.remove(
@@ -203,9 +215,11 @@ nextQuestionBtn.addEventListener("click", () => {
     settingGame.numberQuestionComplite++;
     nextQuestionBtn.disabled = true;
     settingGame.currentQuestion = choiceQuestion(settingGame.categoryGame);
+    settingGame.passedQuestions.push(settingGame.currentQuestion);
     navQuestionAll[settingGame.numberQuestionComplite - 1].classList.add(
       "complite"
     );
+    console.log(settingGame.passedQuestions);
     startGame();
   }
   if (settingGame.numberQuestionComplite === 9) {
