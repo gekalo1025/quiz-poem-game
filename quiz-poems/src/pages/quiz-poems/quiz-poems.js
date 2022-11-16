@@ -301,4 +301,5 @@ document
   .addEventListener("click", toggleLanguage);
 
 window.addEventListener("beforeunload", setLocalStorage);
+
 window.addEventListener("load", getLocalStorage);

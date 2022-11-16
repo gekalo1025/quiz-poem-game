@@ -5,6 +5,7 @@ import imgPlay from "../../assets/icons/play.svg";
 import imgPause from "../../assets/icons/pause.svg";
 import imgVolume from "../../assets/icons/sound-on.svg";
 import imgMute from "../../assets/icons/mute.svg";
+import { CurrentQuestionPlayer } from "../../js/player";
 
 function addCardVerse() {
   const galleryPoetryCards = document.querySelector(".gallery__poetry-cards");
@@ -86,18 +87,84 @@ function addCardVerse() {
     newCard.appendChild(verseCardInfo);
 
     img.src = poetryBiography.filter(
-      (item) => item.nameAuthor === poetryData[i].nameAuthor
+      (item) =>
+        item[localStorage.getItem("language")].nameAuthor ===
+        poetryData[i][localStorage.getItem("language")].nameAuthor
     )[0].photo;
     verseCardTitle.innerText =
-      poetryData[i].nameAuthor + "\n" + `"${poetryData[i].title}"`;
-    audio.src = poetryData[i].srcAudio;
+      poetryData[i][localStorage.getItem("language")].nameAuthor +
+      "\n" +
+      `"${poetryData[i][localStorage.getItem("language")].title}"`;
+    // audio.src = poetryData[i].srcAudio;
     galleryPoetryCards.append(newCard);
   }
 }
 addCardVerse();
 
+// let galleryAudio = null;
+// let galleryPlayBtn = null;
+// let galleryCurrentTime = null;
+// let galleryMaxTime = null;
+// let galleryTimebarLine = null;
+// let galleryVolumeSlider = null;
+// let galleryMuteButton = null;
+let galleryPlayer = null;
+
 document.addEventListener("click", (element) => {
   if (element.target.closest("div").classList.contains("player-icon")) {
-    console.log("yes");
+    let galleryAudio =
+      element.target.closest("div").parentElement.parentElement
+        .previousElementSibling;
+
+    let galleryPlayBtn = element.target;
+    let galleryTimebarLine = element.target.closest("div").nextElementSibling;
+    let galleryCurrentTime =
+      element.target.closest("div").parentElement.nextElementSibling
+        .firstElementChild.firstElementChild;
+    let galleryMaxTime =
+      element.target.closest("div").parentElement.nextElementSibling
+        .firstElementChild.lastElementChild;
+    let galleryVolumeSlider =
+      element.target.closest("div").parentElement.nextElementSibling
+        .lastElementChild.lastElementChild;
+    let galleryMuteButton =
+      element.target.closest("div").parentElement.nextElementSibling
+        .lastElementChild.firstElementChild;
+
+    let re = /^.+\s"/gm;
+    let titleCurrent = element.target
+      .closest("div")
+      .parentElement.parentElement.parentElement.previousElementSibling.innerText.replace(
+        re,
+        '"'
+      )
+      .replace(/"/gm, "");
+
+    galleryAudio.src = poetryData.filter(
+      (item) => item[localStorage.getItem("language")].title === titleCurrent
+    )[0].srcAudio;
+
+    galleryPlayer = new CurrentQuestionPlayer(
+      galleryAudio,
+      galleryPlayBtn,
+      galleryCurrentTime,
+      galleryMaxTime,
+      galleryTimebarLine,
+      galleryVolumeSlider,
+      galleryMuteButton
+    );
+
+    galleryPlayer.playAudio();
+    galleryPlayer.toggleBtn();
+    galleryPlayer.showAudioDuration();
   }
 });
+
+// galleryAudio.addEventListener("ended", () => {
+//   galleryPlayer.isPlay = false;
+//   galleryPlayer.toggleBtn();
+// });
+
+// galleryTimebarLine.addEventListener("change", () => {
+//   galleryPlayer.audioRewind();
+// });

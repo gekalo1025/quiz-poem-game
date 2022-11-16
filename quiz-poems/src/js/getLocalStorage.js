@@ -10,5 +10,7 @@ export function getLocalStorage() {
       settingGame.language = "ru";
     }
     toggleLanguage();
+  } else {
+    localStorage.setItem("language", settingGame.language);
   }
 }
