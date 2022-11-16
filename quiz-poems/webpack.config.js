@@ -10,7 +10,7 @@ const BundleAnalyzerPlugin =
 const isProd = process.env.NODE_ENV == "production";
 const isDev = process.env.NODE_ENV == "development";
 
-const pages = ["quiz-poems"];
+const pages = ["quiz-poems", "gallery"];
 
 const config = {
   context: path.resolve(__dirname, "src"),

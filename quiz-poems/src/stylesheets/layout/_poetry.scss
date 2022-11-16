@@ -1,0 +1,36 @@
+.poetry {
+    &__container {
+    }
+}
+
+.gallery {
+    &__poetry-cards {
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.verse-card {
+    flex-basis: calc(25% - 50px);
+    &__img {
+        max-width: 100%;
+        height: 250px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__player {
+    }
+
+    &__play {
+    }
+}
