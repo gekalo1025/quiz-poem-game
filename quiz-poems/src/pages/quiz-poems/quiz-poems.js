@@ -113,6 +113,7 @@ category.addEventListener("click", (element) => {
   settingGame.categoryGame = element.target.id;
   settingGame.currentQuestion = choiceQuestion(element.target.id);
   settingGame.passedQuestions.push(settingGame.currentQuestion);
+
   startGame();
   toggleHiddenBody();
 });

@@ -200,6 +200,429 @@ const poetryData = [
     srcAudio:
       "./static/audio/audio-poetry/classicism/per-de-ronsar-kogda-sred-suma-bytiya.mp3",
   },
+  {
+    en: {
+      nameAuthor: "A.S. Pushkin",
+      title: "Autumn",
+    },
+    ru: {
+      nameAuthor: "А.С. Пушкин",
+      title: "Осень",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/aleksandr-puskin-osen.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "A.S. Pushkin",
+      title: "Prisoner",
+    },
+    ru: {
+      nameAuthor: "А.С. Пушкин",
+      title: "Узник",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/aspuskin-uznik_[cut_45sec].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "A.S. Pushkin",
+      title: "Winter. What should we do in the countryside",
+    },
+    ru: {
+      nameAuthor: "А.С. Пушкин",
+      title: "Зима. Что делать нам в деревне",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/zima-cto-delat-nam-v-derevne-as-puskin.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "A.S. Pushkin",
+      title: "A gift in vain, a gift of chance",
+    },
+    ru: {
+      nameAuthor: "А.С. Пушкин",
+      title: "Дар напрасный, дар случайный",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/puskin-as-dar-naprasnyi-dar-slucainyi.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "Loneliness",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "Одиночество",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/mixail-lermontov-odinocestvo-citaet-pavel-morozov-uci-stixi-legko.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "Clouds",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "Тучи",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/mixail-yurevic-lermontov-tuci-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "I go out on the road alone",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "Выхожу один я на дорогу",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/mixail-yurevic-lermontov-vyxozu-odin-ya-na-dorogu-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "Leaf",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "Листок",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/mixail-yurevic-lermontov-listok-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "M.Y. Lermontov",
+      title: "Desire",
+    },
+    ru: {
+      nameAuthor: "М.Ю. Лермонтов",
+      title: "Желание",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/mixail-yurevic-lermontov-zelanie-otvorite-mne-temnicu-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Giacomo Leopardi",
+      title: "The first love",
+    },
+    ru: {
+      nameAuthor: "Джакомо Леопарди",
+      title: "Первая любовь",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/dzakomo-leopardi-stix-e-pervaya-lyubov_[cut_350sec].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Giacomo Leopardi",
+      title: "To my Donna",
+    },
+    ru: {
+      nameAuthor: "Джакомо Леопарди",
+      title: "К моей донне",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/dzakomo-leopardi-stix-e-k-moei-donne-11.4-187.3.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "V.A. Zhukovsky",
+      title: "Sea",
+    },
+    ru: {
+      nameAuthor: "В.А. Жуковский",
+      title: "Море",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/vasilii-andreevic-zukovskii-more-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "V.A. Zhukovsky",
+      title: "Unbearable",
+    },
+    ru: {
+      nameAuthor: "В.А. Жуковский",
+      title: "Невыразимое",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/vasilii-andreevic-zukovskii-nevyrazimoe-otryvok-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "William Wordsworth",
+      title: "Daffodils",
+    },
+    ru: {
+      nameAuthor: "Уильям Вордсворт",
+      title: "Нарциссы",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "William Wordsworth",
+      title: "It's the other way around",
+    },
+    ru: {
+      nameAuthor: "Уильям Вордсворт",
+      title: "Все наоборот",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "William Wordsworth",
+      title: "You are still silent",
+    },
+    ru: {
+      nameAuthor: "Уильям Вордсворт",
+      title: "Ты все молчишь",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Edgar Allan Poe",
+      title: "Anabel Lee",
+    },
+    ru: {
+      nameAuthor: "Эдгар Аллан По",
+      title: "Анабель Ли",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Edgar Allan Poe",
+      title: "Sleep",
+    },
+    ru: {
+      nameAuthor: "Эдгар Аллан По",
+      title: "Сон",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Edgar Allan Poe",
+      title: "Eldorado",
+    },
+    ru: {
+      nameAuthor: "Эдгар Аллан По",
+      title: "Эльдорадо",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Edgar Allan Poe",
+      title: "Spirits of the Dead",
+    },
+    ru: {
+      nameAuthor: "Эдгар Аллан По",
+      title: "Духи мертвых",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Emily Elizabeth Dickinson",
+      title: "First we ask for joy ",
+    },
+    ru: {
+      nameAuthor: "Э́мили Эли́забет Ди́кинсон",
+      title: "Сперва мы просим радости",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Emily Elizabeth Dickinson",
+      title: "Руку is a letter to the world from me",
+    },
+    ru: {
+      nameAuthor: "Э́мили Эли́забет Ди́кинсон",
+      title: "Здесь письмо к миру от меня",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Emily Elizabeth Dickinson",
+      title: "I've come for a smile",
+    },
+    ru: {
+      nameAuthor: "Э́мили Эли́забет Ди́кинсон",
+      title: "Я за улыбкою пришла",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "William Blake",
+      title: "Cupid",
+    },
+    ru: {
+      nameAuthor: "Уильям Блейк",
+      title: "Купидон",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "William Blake",
+      title: "Mary",
+    },
+    ru: {
+      nameAuthor: "Уильям Блейк",
+      title: "Мэри",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "William Blake",
+      title: "Under the dead tree",
+    },
+    ru: {
+      nameAuthor: "Уильям Блейк",
+      title: "Под мертвым древом",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Robert Burns",
+      title: "Breakup",
+    },
+    ru: {
+      nameAuthor: "Роберт Бёрнс",
+      title: "Расстование",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Robert Burns",
+      title: "Honest Poverty",
+    },
+    ru: {
+      nameAuthor: "Роберт Бёрнс",
+      title: "Честная бедность",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Robert Burns",
+      title: "Old friendship",
+    },
+    ru: {
+      nameAuthor: "Роберт Бёрнс",
+      title: "Старая дружба",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Victor Hugo",
+      title: "Fairy",
+    },
+    ru: {
+      nameAuthor: "Виктор Гюго",
+      title: "Фея",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Victor Hugo",
+      title: "Your will",
+    },
+    ru: {
+      nameAuthor: "Виктор Гюго",
+      title: "Твоею волею",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+  {
+    en: {
+      nameAuthor: "Victor Hugo",
+      title: "Wishes",
+    },
+    ru: {
+      nameAuthor: "Виктор Гюго",
+      title: "Желания",
+    },
+    categoryPoetry: "romanticism",
+    srcAudio: "./static/audio/audio-poetry/romanticism/",
+  },
+
+  // {
+  //   en: {
+  //     nameAuthor: "",
+  //     title: "",
+  //   },
+  //   ru: {
+  //     nameAuthor: "",
+  //     title: "",
+  //   },
+  //   categoryPoetry: "romanticism",
+  //   srcAudio:
+  //     "./static/audio/audio-poetry/romanticism/",
+  // },
 ];
 
 export default poetryData;

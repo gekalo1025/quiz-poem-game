@@ -79,5 +79,10 @@ export default function toggleLanguage() {
     );
   }
   setLocalStorage();
-  startGame();
+
+  if (
+    !document.querySelector(".body-quiz-poems").classList.contains("hidden")
+  ) {
+    startGame();
+  }
 }
