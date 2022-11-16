@@ -8,7 +8,7 @@ export default function showScrollArrow() {
     document.documentElement.offsetHeight,
     document.documentElement.clientHeight
   );
-  let currentDisplayHeight = document.body.clientHeight;
+  let currentDisplayHeight = document.documentElement.clientHeight;
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollHeight - currentDisplayHeight - scrollTop < 20) {

@@ -42,7 +42,6 @@
         }
 
         .question.complite {
-            // background-color: red;
             position: relative;
             &:before {
                 content: "";
@@ -61,6 +60,7 @@
 }
 .score {
     @include adaptiv-value("font-size", 35, 15, 1920);
+    white-space: nowrap;
     &__title {
     }
 

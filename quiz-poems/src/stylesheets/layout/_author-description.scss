@@ -28,6 +28,7 @@
         flex: 0 0 15%;
         border: 1px solid black;
         border-radius: 10%;
+
         img {
             border-radius: 10%;
             min-width: 70px;
@@ -44,7 +45,8 @@
     &__title {
         // font-family: $text-font-stack2;
         text-align: center;
-        margin: 0 0 30px 0;
+
+        margin: 15px 0 15px 0;
         @include adaptiv-value("font-size", 25, 15, 1920);
         @include adaptiv-value("letter-spacing", 5, 0, 1920);
     }
@@ -63,7 +65,9 @@
     &__text {
         display: flex;
         flex-direction: column;
-        height: auto;
+        max-height: 230px;
+        max-height: 160px;
+        overflow: auto;
         @include adaptiv-value("font-size", 20, 16, 1920);
         font-family: $text-font-stack2;
         p {

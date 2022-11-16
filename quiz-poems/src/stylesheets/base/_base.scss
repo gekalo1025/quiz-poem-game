@@ -10,8 +10,12 @@ html {
 }
 body {
   background-color: $background-color;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
+  @media (max-width: $breakpoints-medium) {
+    height: auto;
+    overflow-y: scroll;
+  }
 }
 
 /**

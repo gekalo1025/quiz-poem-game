@@ -10,7 +10,7 @@
 .player {
     &__controls {
         display: flex;
-        gap: 15px;
+        column-gap: 15px;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -72,6 +72,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        margin-left: 9%;
         .timebar__info-time {
             display: flex;
             @include adaptiv-value("font-size", 25, 15, 1920);

@@ -1,5 +1,6 @@
 .current-question {
-    @include adaptiv-value("margin-bottom", 50, 15, 1920);
+    // @include adaptiv-value("margin-bottom", 30, 15, 1920);
+    margin-bottom: 10px;
     &__container {
         display: flex;
         @include adaptiv-value("gap", 100, 20, 1920);
