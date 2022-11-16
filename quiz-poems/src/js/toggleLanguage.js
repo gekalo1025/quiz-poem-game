@@ -3,6 +3,7 @@ import startGame from "./startGame";
 const languageBtn = document.querySelectorAll(".language-btn img");
 import flagRussia from "../assets/icons/russian-federation.png";
 import flagEngland from "../assets/icons/great-britain.png";
+import { setLocalStorage } from "./setLocalStorage";
 
 export default function toggleLanguage() {
   if (settingGame.language === "ru") {
@@ -77,5 +78,6 @@ export default function toggleLanguage() {
         <span id="score-points" class="score__points">${settingGame.score}</span>`)
     );
   }
+  setLocalStorage();
   startGame();
 }

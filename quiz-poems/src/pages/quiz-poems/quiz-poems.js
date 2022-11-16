@@ -29,6 +29,8 @@ export const currentQuestionAudio = document.getElementById(
 import { authorDescriptionAudio } from "../../js/showAuthorDescription";
 import showScrollArrow from "../../js/showScrollArrow";
 import toggleLanguage from "../../js/toggleLanguage";
+import { setLocalStorage } from "../../js/setLocalStorage";
+import { getLocalStorage } from "../../js/getLocalStorage";
 // export const authorDescriptionAudio = document.getElementById("author-audio");
 
 ////////// create player ...
@@ -297,3 +299,6 @@ document
 document
   .querySelector(".body-results .language-btn")
   .addEventListener("click", toggleLanguage);
+
+window.addEventListener("beforeunload", setLocalStorage);
+window.addEventListener("load", getLocalStorage);
