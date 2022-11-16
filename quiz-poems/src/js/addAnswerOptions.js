@@ -4,7 +4,8 @@ import isCorrectAnswerInList from "./isСorrectAnswerInList";
 const answersOptions = document.querySelector(".answers__options");
 
 export default function addAnswersOptions(arrAnswers, quantity) {
-  const correctAuthor = settingGame.currentQuestion.nameAuthor;
+  const correctAuthor =
+    settingGame.currentQuestion[settingGame.language].nameAuthor;
   answersOptions.innerHTML = "";
 
   for (let i = 0; i < quantity; i++) {

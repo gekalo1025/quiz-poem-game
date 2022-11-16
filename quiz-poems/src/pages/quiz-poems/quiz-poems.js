@@ -12,6 +12,7 @@ export const settingGame = {
   numberQuestionComplite: 0,
   passedQuestions: [],
   counterClickError: 0,
+  language: "ru",
 };
 
 import startGame from "../../js/startGame";
@@ -27,6 +28,7 @@ export const currentQuestionAudio = document.getElementById(
 );
 import { authorDescriptionAudio } from "../../js/showAuthorDescription";
 import showScrollArrow from "../../js/showScrollArrow";
+import toggleLanguage from "../../js/toggleLanguage";
 // export const authorDescriptionAudio = document.getElementById("author-audio");
 
 ////////// create player ...
@@ -158,7 +160,8 @@ answersOptions.addEventListener("click", (element) => {
   const audioErr = new Audio(audioErrorArr[settingGame.counterClickError]);
   const audioСor = new Audio(audioCorrect);
   if (
-    element.target.textContent === settingGame.currentQuestion.nameAuthor &&
+    element.target.textContent ===
+      settingGame.currentQuestion[settingGame.language].nameAuthor &&
     nextQuestionBtn.getAttribute("disabled") !== null
   ) {
     audioСor.play();
@@ -169,9 +172,11 @@ answersOptions.addEventListener("click", (element) => {
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("correct-answer");
     settingGame.score += maxPointAnswer - settingGame.numberWrongAnswer;
-    scorePointsAll[0].textContent = settingGame.score;
-    scorePointsAll[1].textContent = settingGame.score;
-    scorePointsAll[2].textContent = settingGame.score;
+    // scorePointsAll[0].textContent = settingGame.score;
+    document.querySelector(".body-quiz-poems .score__points").textContent =
+      settingGame.score;
+    document.querySelector(".body-results .score__points").textContent =
+      settingGame.score;
     settingGame.numberWrongAnswer = 0;
   }
   if (nextQuestionBtn.getAttribute("disabled") === null) {
@@ -203,10 +208,16 @@ nextQuestionBtn.addEventListener("click", () => {
     document.querySelector(".body-quiz-poems").classList.add("hidden");
     document.querySelector(".body-results").classList.remove("hidden");
     if (settingGame.score >= 50) {
-      document.querySelector(
-        ".result__text"
-      ).innerHTML = `Поздравляем! Вы победили в викторине набрав максимальное количество
+      if (settingGame.language === "ru") {
+        document.querySelector(
+          ".result__text"
+        ).innerHTML = `Поздравляем! Вы победили в викторине набрав максимальное количество
         баллов! <a href="./quiz-poems.html" class="result__btn"> Желаете сыграть еще ?</a>`;
+      } else {
+        document.querySelector(
+          ".result__text"
+        ).innerHTML = `Congratulations! You won the quiz with the highest score! <a href="./quiz-poems.html" class="result__btn"> Play again ?</a>`;
+      }
     }
     document.querySelector(".result__current-score").textContent =
       settingGame.score;
@@ -234,7 +245,11 @@ nextQuestionBtn.addEventListener("click", () => {
     startGame();
   }
   if (settingGame.numberQuestionComplite === 9) {
-    nextQuestionBtn.textContent = "Show result";
+    if (settingGame.language === "ru") {
+      nextQuestionBtn.textContent = "Показать результаты";
+    } else {
+      nextQuestionBtn.textContent = "Show results";
+    }
   }
 });
 
@@ -272,3 +287,13 @@ currentQuestionMuteButton.addEventListener("click", () => {
 });
 document.addEventListener("scroll", showScrollArrow);
 showScrollArrow();
+
+document
+  .querySelector(".body-start-game .language-btn")
+  .addEventListener("click", toggleLanguage);
+document
+  .querySelector(".body-quiz-poems .language-btn")
+  .addEventListener("click", toggleLanguage);
+document
+  .querySelector(".body-results .language-btn")
+  .addEventListener("click", toggleLanguage);

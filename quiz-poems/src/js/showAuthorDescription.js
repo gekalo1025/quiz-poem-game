@@ -21,8 +21,9 @@ const currentQuestionTitle = document.getElementById("current-question-title");
 export default function showAuthorDescription(nameAuthor, resultAnswer) {
   let arrPoemsAudio = poetryData.filter((item) => {
     if (
-      item.nameAuthor === nameAuthor &&
-      item.title !== settingGame.currentQuestion.title
+      item[settingGame.language].nameAuthor === nameAuthor &&
+      item[settingGame.language].title !==
+        settingGame.currentQuestion[settingGame.language].title
     ) {
       return true;
     } else {
@@ -32,10 +33,12 @@ export default function showAuthorDescription(nameAuthor, resultAnswer) {
 
   if (resultAnswer === "wrong") {
     poetryBiography.forEach((item) => {
-      if (item.nameAuthor == nameAuthor) {
+      if (item[settingGame.language].nameAuthor == nameAuthor) {
         authorDescriptionImg.src = item.photo;
-        authorDescriptionTitle.textContent = item.nameAuthor;
-        authorDescriptionText.textContent = item.biography;
+        authorDescriptionTitle.textContent =
+          item[settingGame.language].nameAuthor;
+        authorDescriptionText.textContent =
+          item[settingGame.language].biography;
         authorDescriptionBtn.setAttribute(
           "onclick",
           `window.open('${item.linkWiki}', '_blank')`
@@ -45,10 +48,12 @@ export default function showAuthorDescription(nameAuthor, resultAnswer) {
   }
   if (resultAnswer === "correct") {
     poetryBiography.forEach((item) => {
-      if (item.nameAuthor == nameAuthor) {
+      if (item[settingGame.language].nameAuthor == nameAuthor) {
         currentQuestionImg.src = item.photo;
         currentQuestionTitle.innerText =
-          item.nameAuthor + "\n" + `"${settingGame.currentQuestion.title}"`;
+          item[settingGame.language].nameAuthor +
+          "\n" +
+          `"${settingGame.currentQuestion[settingGame.language].title}"`;
       }
     });
   }
