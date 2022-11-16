@@ -1,9 +1,13 @@
+.body-results {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .result {
-    display: flex;
-    justify-content: center;
-
     &__text {
-        @include adaptiv-value("font-size", 36, 17, 1920);
+        @include adaptiv-value("font-size", 50, 20, 1920);
     }
 
     &__current-score {
