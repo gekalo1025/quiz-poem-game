@@ -391,7 +391,8 @@ const poetryData = [
       title: "Нарциссы",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/uilyam-vordsvort-krasivyi-stix-narcissy-16.8-111.3.mp3",
   },
   {
     en: {
@@ -403,7 +404,8 @@ const poetryData = [
       title: "Все наоборот",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/uilyam-vordsvort-stix-vsyo-naoborot-13.6-123.2.mp3",
   },
   {
     en: {
@@ -415,7 +417,8 @@ const poetryData = [
       title: "Ты все молчишь",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/vordsvort-sonet-ob-otvergnutoi-lyubvi-18.7-77.9.mp3",
   },
   {
     en: {
@@ -427,7 +430,8 @@ const poetryData = [
       title: "Анабель Ли",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/edgar-po-annabel-li-18.7-156.mp3",
   },
   {
     en: {
@@ -439,7 +443,8 @@ const poetryData = [
       title: "Сон",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/edgar-allan-po-son-vo-sne-hd-56.2-139.9.mp3",
   },
   {
     en: {
@@ -451,7 +456,8 @@ const poetryData = [
       title: "Эльдорадо",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/edgar-po-misticeskoe-stix-e-eldorado-18.3-99.8.mp3",
   },
   {
     en: {
@@ -463,7 +469,8 @@ const poetryData = [
       title: "Духи мертвых",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/edgar-po-grustnyi-stix-duxi-myortvyx-21.7-137.7.mp3",
   },
   {
     en: {
@@ -475,7 +482,8 @@ const poetryData = [
       title: "Сперва мы просим радости",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/sperva-my-prosim-radosti-emili-dikinson-zarubeznaya-poeziya-citaet-pavel-besedin.mp3",
   },
   {
     en: {
@@ -487,7 +495,8 @@ const poetryData = [
       title: "Здесь письмо к миру от меня",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/zdes-pisma-k-miru-ot-menya-emili-dikinson-zarubeznaya-poeziya-citaet-pavel-besedin.mp3",
   },
   {
     en: {
@@ -499,7 +508,8 @@ const poetryData = [
       title: "Я за улыбкою пришла",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/e-ponasenkov-citaet-stixotvorenie-emili-dikinson-26.4-70.8.mp3",
   },
   {
     en: {
@@ -511,7 +521,8 @@ const poetryData = [
       title: "Купидон",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/uilyam-bleik-stixotvorenie-kupidon-12.2-76.1.mp3",
   },
   {
     en: {
@@ -523,7 +534,8 @@ const poetryData = [
       title: "Мэри",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/uilyam-bleik-pecalnyi-stix-meri-17.8-248.6.mp3",
   },
   {
     en: {
@@ -535,7 +547,8 @@ const poetryData = [
       title: "Под мертвым древом",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/uilyam-bleik-pod-mirtovym-drevom-16.3-73.9.mp3",
   },
   {
     en: {
@@ -544,10 +557,11 @@ const poetryData = [
     },
     ru: {
       nameAuthor: "Роберт Бёрнс",
-      title: "Расстование",
+      title: "Расставание",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/robert-byorns-stix-e-o-lyubvi-rasstavanie-7.4-56.9.mp3",
   },
   {
     en: {
@@ -559,7 +573,8 @@ const poetryData = [
       title: "Честная бедность",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/robert-byorns-stix-e-cestnaya-bednost-12-89.8.mp3",
   },
   {
     en: {
@@ -571,7 +586,8 @@ const poetryData = [
       title: "Старая дружба",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/robert-byorns-stix-staraya-druzba-19.3-118.1.mp3",
   },
   {
     en: {
@@ -583,7 +599,8 @@ const poetryData = [
       title: "Фея",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/gyugo-misticeskoe-krasivoe-stix-e-feya (1)-18.5-171.mp3",
   },
   {
     en: {
@@ -595,7 +612,8 @@ const poetryData = [
       title: "Твоею волею",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/gyugo-tvoeyu-voleyu-to-molod-ya-to-star-20.2-232.5.mp3",
   },
   {
     en: {
@@ -607,7 +625,8 @@ const poetryData = [
       title: "Желания",
     },
     categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
+    srcAudio:
+      "./static/audio/audio-poetry/romanticism/gyugo-neznoe-stixotvorenie-zelaniya-13.4-80.7.mp3",
   },
 
   // {
