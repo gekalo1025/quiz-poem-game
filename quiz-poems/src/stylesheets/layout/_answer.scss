@@ -9,17 +9,24 @@
         @media (max-width: $breakpoints-medium) {
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
     }
     &__options {
         padding-top: 50px;
         flex: 0 0 30%;
         display: flex;
-
         flex-direction: column;
-        @include adaptiv-value("gap", 40, 20, 1920);
-        @media (max-width: 500px) {
-            flex: 0 0 22%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        white-space: nowrap;
+        @include adaptiv-value("height", 250, 125, 1920);
+        @include adaptiv-value("row-gap", 40, 10, 1920);
+        @include adaptiv-value("column-gap", 40, 20, 1920);
+        @media (max-width: $breakpoints-medium) {
+            width: 100%;
+            margin-left: 20px;
         }
         .answer {
             max-width: 150px;
@@ -39,7 +46,7 @@
                 border-radius: 50%;
                 width: 15px;
                 height: 15px;
-                left: -13%;
+                left: -20px;
             }
 
             &.wrong-answer {
