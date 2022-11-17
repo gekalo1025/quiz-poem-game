@@ -753,7 +753,7 @@ const poetryData = [
     },
     categoryPoetry: "modernism",
     srcAudio:
-      "./static/audio/audio-poetry/modernism/ieits-krasivoe-mificeskoe-stixotvorenie.mp3",
+      "./static/audio/audio-poetry/modernism/ieits-krasivoe-mificeskoe-stixotvorenie-[AudioTrimmer.com].mp3",
   },
   {
     en: {
