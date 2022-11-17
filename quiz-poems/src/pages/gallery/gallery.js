@@ -6,11 +6,13 @@ import imgPause from "../../assets/icons/pause.svg";
 import imgVolume from "../../assets/icons/sound-on.svg";
 import imgMute from "../../assets/icons/mute.svg";
 import { CurrentQuestionPlayer } from "../../js/player";
-
+import getRandomIntInclusive from "../../js/getRandomIntInclusive";
+let copyPoetryData = poetryData.slice();
 function addCardVerse() {
   const galleryPoetryCards = document.querySelector(".gallery__poetry-cards");
+  while (copyPoetryData.length > 0) {
+    let randomNumber = getRandomIntInclusive(0, copyPoetryData.length - 1);
 
-  for (let i = 0; i < poetryData.length; i++) {
     const newCard = document.createElement("div");
     newCard.classList.add("verse-card");
     const verseCardImg = document.createElement("div");
@@ -30,58 +32,10 @@ function addCardVerse() {
 
     const audio = document.createElement("audio");
     audio.id = "verse-card__audio";
+    audio.setAttribute("controls", "true");
+    audio.setAttribute("preload", "metadata");
 
     verseCardPlayer.appendChild(audio);
-
-    verseCardPlayer.innerHTML += `
-    <div class="player__controls">
-      <div id="timebar" class="player__timebar timebar">
-        <div
-          id="player-icon"
-          class="verse-card__play player__play player-icon"
-        >
-          <img src=${imgPlay} alt="play" />
-        </div>
-        <input
-          id="timebar-line"
-          class="timebar__line"
-          type="range"
-          value="0"
-          min="0"
-          max=""
-          step="1"
-        />
-      </div>
-      <div class="timebar__info">
-        <div class="timebar__info-time">
-          <div
-            id="timebar-current-time"
-            class="timebar-current-time"
-          >
-            0:00
-          </div>
-          <span>/</span>
-          <div id="timebar-max-time" class="timebar-max-time">
-            0:00
-          </div>
-        </div>
-        <div class="player__volume-slider volume">
-          <img
-            class="volume__img"
-            src=${imgVolume}
-            alt="volume"
-          />
-          <input
-            class="volume__input"
-            min="0"
-            max="1"
-            value="1"
-            step="0.1"
-            type="range"
-          />
-        </div>
-      </div>
-    </div>`;
     verseCardInfo.appendChild(verseCardPlayer);
 
     newCard.appendChild(verseCardInfo);
@@ -89,82 +43,21 @@ function addCardVerse() {
     img.src = poetryBiography.filter(
       (item) =>
         item[localStorage.getItem("language")].nameAuthor ===
-        poetryData[i][localStorage.getItem("language")].nameAuthor
+        copyPoetryData[randomNumber][localStorage.getItem("language")]
+          .nameAuthor
     )[0].photo;
     verseCardTitle.innerText =
-      poetryData[i][localStorage.getItem("language")].nameAuthor +
+      copyPoetryData[randomNumber][localStorage.getItem("language")]
+        .nameAuthor +
       "\n" +
-      `"${poetryData[i][localStorage.getItem("language")].title}"`;
-    // audio.src = poetryData[i].srcAudio;
+      `"${
+        copyPoetryData[randomNumber][localStorage.getItem("language")].title
+      }"`;
+    audio.src = copyPoetryData[randomNumber].srcAudio;
+
     galleryPoetryCards.append(newCard);
+
+    let delite = copyPoetryData.splice(randomNumber, 1);
   }
 }
 addCardVerse();
-
-// let galleryAudio = null;
-// let galleryPlayBtn = null;
-// let galleryCurrentTime = null;
-// let galleryMaxTime = null;
-// let galleryTimebarLine = null;
-// let galleryVolumeSlider = null;
-// let galleryMuteButton = null;
-let galleryPlayer = null;
-
-document.addEventListener("click", (element) => {
-  if (element.target.closest("div").classList.contains("player-icon")) {
-    let galleryAudio =
-      element.target.closest("div").parentElement.parentElement
-        .previousElementSibling;
-
-    let galleryPlayBtn = element.target;
-    let galleryTimebarLine = element.target.closest("div").nextElementSibling;
-    let galleryCurrentTime =
-      element.target.closest("div").parentElement.nextElementSibling
-        .firstElementChild.firstElementChild;
-    let galleryMaxTime =
-      element.target.closest("div").parentElement.nextElementSibling
-        .firstElementChild.lastElementChild;
-    let galleryVolumeSlider =
-      element.target.closest("div").parentElement.nextElementSibling
-        .lastElementChild.lastElementChild;
-    let galleryMuteButton =
-      element.target.closest("div").parentElement.nextElementSibling
-        .lastElementChild.firstElementChild;
-
-    let re = /^.+\s"/gm;
-    let titleCurrent = element.target
-      .closest("div")
-      .parentElement.parentElement.parentElement.previousElementSibling.innerText.replace(
-        re,
-        '"'
-      )
-      .replace(/"/gm, "");
-
-    galleryAudio.src = poetryData.filter(
-      (item) => item[localStorage.getItem("language")].title === titleCurrent
-    )[0].srcAudio;
-
-    galleryPlayer = new CurrentQuestionPlayer(
-      galleryAudio,
-      galleryPlayBtn,
-      galleryCurrentTime,
-      galleryMaxTime,
-      galleryTimebarLine,
-      galleryVolumeSlider,
-      galleryMuteButton
-    );
-
-    galleryPlayer.playAudio();
-    galleryPlayer.toggleBtn();
-    galleryPlayer.showAudioDuration();
-  }
-});
-
-// galleryAudio.addEventListener("ended", () => {
-//   galleryPlayer.isPlay = false;
-//   galleryPlayer.toggleBtn();
-// });
-
-// galleryTimebarLine.addEventListener("change", () => {
-//   galleryPlayer.audioRewind();
-// });

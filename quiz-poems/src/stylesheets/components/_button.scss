@@ -71,3 +71,12 @@
         bottom: 3%;
     }
 }
+
+.galery-poems-link {
+    color: black;
+    @include adaptiv-value("font-size", 35, 20, 1920);
+
+    &:hover {
+        color: $brand-color;
+    }
+}

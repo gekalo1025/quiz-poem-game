@@ -1,20 +1,22 @@
 .poetry {
+    margin-bottom: 50px;
     &__container {
     }
 }
 
 .gallery {
     &__poetry-cards {
-        gap: 50px;
+        gap: 80px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 .verse-card {
-    flex-basis: calc(25% - 50px);
     &__img {
-        max-width: 100%;
-        height: 250px;
+        max-width: 280px;
+        height: 280px;
+
         img {
             width: 100%;
             height: 100%;
