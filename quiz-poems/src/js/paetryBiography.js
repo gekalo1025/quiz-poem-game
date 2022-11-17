@@ -305,17 +305,207 @@ export const poetryBiography = [
     },
     photo: "./static/images/photo-author/romantism/Victor_Hugo.png",
   },
-  // {
-  //   en: {
-  //     nameAuthor: "",
-  //     biography: ``,
-  //     linkWiki: "",
-  //   },
-  //   ru: {
-  //     nameAuthor: "",
-  //     biography: ``,
-  //     linkWiki: "",
-  //   },
-  //   photo: "./static/images/photo-author/romantism/",
-  // },
+  {
+    en: {
+      nameAuthor: "Charles Baudelaire",
+      biography: `Charles Pierre Baudelaire ( 9 April 1821 – 31 August 1867) was a French poet who also produced notable work as an essayist and art critic. His poems exhibit mastery in the handling of rhyme and rhythm, contain an exoticism inherited from Romantics, but are based on observations of real life.[2]
+
+      His most famous work, a book of lyric poetry titled Les Fleurs du mal (The Flowers of Evil), expresses the changing nature of beauty in the rapidly industrializing Paris during the mid-19th century. Baudelaire's highly original style of prose-poetry influenced a whole generation of poets including Paul Verlaine, Arthur Rimbaud and Stéphane Mallarmé, among many others. He is credited with coining the term modernity (modernité) to designate the fleeting, ephemeral experience of life in an urban metropolis, and the responsibility of artistic expression to capture that experience. Furthermore, Marshall Berman has credited Baudelaire as being the first Modernist`,
+      linkWiki: "https://en.wikipedia.org/wiki/Charles_Baudelaire",
+    },
+    ru: {
+      nameAuthor: "Шарль Бодлер",
+      biography: `Шарль Пьер Бодле́р ( 9 апреля 1821 года, Париж, Франция — 31 августа 1867 года, там же) — французский поэт, критик, эссеист и переводчик; основоположник декаданса и символизма, повлиявший на развитие всей последующей европейской поэзии. Классик французской и мировой литературы.
+
+      Наиболее известным и значительным в его творчестве стал сборник стихов «Цветы зла», опубликованный им в 1857 году.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B4%D0%BB%D0%B5%D1%80,_%D0%A8%D0%B0%D1%80%D0%BB%D1%8C",
+    },
+    photo: "./static/images/photo-author/modernism/Baudelaire.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Guillaume Apollinaire",
+      biography: `Guillaume Apollinaire[a] ( 26 August 1880 – 9 November 1918) was a French poet, playwright, short story writer, novelist, and art critic of Polish-Belarusian descent.
+
+      Apollinaire is considered one of the foremost poets of the early 20th century, as well as one of the most impassioned defenders of Cubism and a forefather of Surrealism. He is credited with coining the term "Cubism"[1] in 1911 to describe the emerging art movement, the term Orphism in 1912, and the term "Surrealism" in 1917 to describe the works of Erik Satie. He wrote poems without punctuation attempting to be resolutely modern in both form and subject.[2] Apollinaire wrote one of the earliest Surrealist literary works, the play The Breasts of Tiresias (1917), which became the basis for Francis Poulenc's 1947 opera Les mamelles de Tirésias.
+      
+      Influenced by Symbolist poetry in his youth, he was admired during his lifetime by the young poets who later formed the nucleus of the Surrealist group (Breton, Aragon, Soupault). He revealed very early on an originality that freed him from any school of influence and made him one of the precursors of the literary revolution of the first half of the 20th century. His art is not based on any theory, but on a simple principle: the act of creating must come from the imagination, from intuition, because it must be as close as possible to life, to nature, to the environment, and to the human being.
+      
+      Apollinaire was also active as a journalist and art critic for Le Matin, L'Intransigeant, L'Esprit nouveau, Mercure de France, and Paris Journal. In 1912 Apollinaire cofounded Les Soirées de Paris, an artistic and literary magazine.
+      
+      Two years after being wounded in World War I, Apollinaire died during the Spanish flu pandemic of 1918 and was recognized as "Fallen for France" (Mort pour la France) because of his commitment during the war`,
+      linkWiki: "https://en.wikipedia.org/wiki/Guillaume_Apollinaire",
+    },
+    ru: {
+      nameAuthor: "Гийом Аполлинер",
+      biography: `Одним из первых поэтических сборников Аполлинера стал цикл коротких стихотворных фрагментов «Бестиарий, или кортеж Орфея» (Le Bestiaire ou le cortège d’Orphée, 1911), где старинная поэтическая форма катрена и приемы эмблематического письма сочетались с исповедальной меланхолической интонацией. В 1913 году Аполлинер объединил свои лучшие стихи в первый крупный сборник «Алкоголи» (Alcools). Современники обратили внимание на новаторский характер сборника (отсутствие пунктуации, перепады тона, барочные образы)[5]. В 1916 году вышел сборник новелл «Убиенный поэт» (Le poéte assassiné), открывающийся мистифицированной и трагичной автобиографией; в 1918 появился сборник «лирических идеограмм» «Каллиграммы»(Calligrammes)[5], отчасти предвосхищающий «автоматическое письмо» сюрреалистов, а также — провозглашённый в 1924 году румынским художником-сюрреалистом Виктором Браунером синтетический «Манифест пиктопоэзии».`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%B9%D0%BE%D0%BC_%D0%90%D0%BF%D0%BE%D0%BB%D0%BB%D0%B8%D0%BD%D0%B5%D1%80",
+    },
+    photo:
+      "./static/images/photo-author/modernism/Guillaume_Apollinaire_foto.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Rubén Darío",
+      biography: `Félix Rubén García Sarmiento (January 18, 1867 – February 6, 1916), known as Rubén Darío , was a Nicaraguan poet who initiated the Spanish-language literary movement known as modernismo (modernism) that flourished at the end of the 19th century. Darío had a great and lasting influence on 20th-century Spanish-language literature and journalism. He has been praised as the "Prince of Castilian Letters" and undisputed father of the modernismo literary movement.`,
+      linkWiki: "https://en.wikipedia.org/wiki/Rub%C3%A9n_Dar%C3%ADo",
+    },
+    ru: {
+      nameAuthor: "Рубен Дарио",
+      biography: `Рубен Дарио — выдающийся мастер поэтической формы, Не только для испанской Америки, но и для Испании он стал первым представителем поэтического модернизма. Воспитанный на романтической поэзии Америки и Франции, восприняв пышность её конструктивных форм и богатство словаря, он с чрезвычайной интенсивностью впитал в себя разнообразие французской поэзии парнасцев и символистов. Его поэтическим принципом стал лозунг Верлена «музыка прежде всего». Дарио интересовали главным образом проблемы инструментовки поэтической речи, мелодики стиха, лексической изысканности и пр.
+
+      Французский модернизм, соединённый с характерным для испано-американской и испанской интеллигенции конца XIX века идеологическим кризисом и поиском социального самоопределения, направил поэта в область ирреальной тематики, мистицизма, символических образов и культа утончённых и упадочных эмоций и настроений.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D0%B1%D0%B5%D0%BD_%D0%94%D0%B0%D1%80%D0%B8%D0%BE",
+    },
+    photo: "./static/images/photo-author/modernism/Rubén_Darío.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "W. B. Yeats",
+      biography: `William Butler Yeats[a] (13 June 1865 – 28 January 1939) was an Irish poet, dramatist, writer and one of the foremost figures of 20th-century literature. He was a driving force behind the Irish Literary Revival and became a pillar of the Irish literary establishment who helped to found the Abbey Theatre. In his later years he served two terms as a Senator of the Irish Free State.
+
+      A Protestant of Anglo-Irish descent, Yeats was born in Sandymount and was educated in Dublin and London and spent childhood holidays in County Sligo. He studied poetry from an early age, when he became fascinated by Irish legends and the occult. These topics feature in the first phase of his work, lasting roughly from his student days at the Metropolitan School of Art in Dublin until the turn of the 20th century. His earliest volume of verse was published in 1889, and its slow-paced and lyrical poems display debts to Edmund Spenser, Percy Bysshe Shelley and the poets of the Pre-Raphaelite Brotherhood.
+      
+      From 1900 his poetry grew more physical, realistic and politicised. He moved away from the transcendental beliefs of his youth, though he remained preoccupied with some elements including cyclical theories of life. He had become the chief playwright for the Irish Literary Theatre in 1897, and early on promoted younger poets such as Ezra Pound. Yeats was awarded the Nobel Prize in Literature in 1923. His major later works include 1928's The Tower and Words for Music Perhaps and Other Poems, published in 1932.`,
+      linkWiki: "https://en.wikipedia.org/wiki/W._B._Yeats",
+    },
+    ru: {
+      nameAuthor: "Уильям Йейтс",
+      biography: `Уи́льям Ба́тлер Йейтс( годы жизни: 13 июня 1865 — 28 января 1939) — ирландский англоязычный писатель, поэт, драматург, выдающийся деятель западноевропейской литературы XX в. В годы расцвета своего творчества стал движущей силой ирландского литературного возрождения[en] и был одним из столпов писательского истеблишмента в родной стране, члены которого содействовали основанию первого ирландского национального «Театра Аббатства». В более поздние годы занимал пост сенатора от Ирландского свободного государства.
+
+      Протестант англо-ирландского происхождения, Йейтс родился в столичном районе Сандимаунт, провёл детские годы в графстве Слайго, а образование получал в Дублине и Лондоне. Начал интересоваться поэзией с раннего возраста, когда увлёкся ирландским фольклором и оккультизмом. Эти темы неизменно фигурируют на первом этапе его творчества, который начался примерно со студенческих лет до начала XX века. Первый сборник стихов поэта был опубликован в 1889 году, в стиле его стихосложения демонстрируется дань уважения таким писателям как Эдмунд Спенсер, Перси Шелли, а также творчеству прерафаэлитов.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%99%D0%B5%D0%B9%D1%82%D1%81,_%D0%A3%D0%B8%D0%BB%D1%8C%D1%8F%D0%BC_%D0%91%D0%B0%D1%82%D0%BB%D0%B5%D1%80",
+    },
+    photo:
+      "./static/images/photo-author/modernism/William_Butler_Yeats_by_George_Charles_Beresford.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Enrique González Martínez",
+      biography: `Martínez received his early education at home. At the age of 10 he entered preparatory school, the Council Seminary, and the Liceo de Varones (Men's Grammar School) of the State of Jalisco.
+
+      In 1893 Martínez received his doctorate degree in Guadalajara. During that same year he published a few verses in newspapers and magazines. Soon after receiving his degree, he was named adjunct professor of physiology at the School of Medicine. After two years of professional practice, he left his native city to go to Culiacán, Sinaloa. In this state his political ambitions began to develop; he became a political prefect in various areas of the state and Secretary General of government.
+      
+      In 1903 Martínez's first book of poetry, Preludios, was published. With his third book, Silenter, he was received as a member of the Mexican Academy, moving to Mexico City where he became president of the youth Ateneo (1912), founded the literary magazine Argos (1912) and edited the daily newspaper El Imparcial.
+      
+      In his political ambitions he assumed the position of Undersecretary of Public Education and Fine Arts in 1913. The following year he became secretary of government of the State of Puebla; Professor of French Literature in the School of Higher Studies, head of Literature and Grammar classes, and professor of Mexican Literature in the National Preparatory School in the Federal District. In 1917, in the company of other great literary lights such as Ramon Lopez Velarde and Efrén Rebolledo, he directed Pegaso magazine.
+      
+      Martínez entered the Mexican Foreign Service in 1920, occupying the position of plenipotentiary minister of Mexico in Chile, Argentina, Spain and Portugal between the years 1920 and 1931. Later he returned to Mexico.
+      
+      Late in 1942, Martínez entered the Seminary of Mexican Culture, and later in 1943, to the National School where he sustained conferences on diverse subjects of literary history. He was a member of the Mexican Academy of Language and the Altamirano Grammar School. In 1944 he received the Ávila Camacho National Prize of Literature and his Poesías Completas was published.
+      
+      He died in Mexico City in 1952.`,
+      linkWiki:
+        "https://en.wikipedia.org/wiki/Enrique_Gonz%C3%A1lez_Mart%C3%ADnez",
+    },
+    ru: {
+      nameAuthor: "Энрике Мартинес",
+      biography: `Родился в семье учителя, получил медицинское образование. До 1911 года работал в провинции, после чего переехал в Мехико. Входил в литературный кружок Атеней Молодёжи, издавал журнал «Пегас». С 1920 по 1931 год состоял на дипломатической службе: был послом в Аргентине, Чили, Испании и Португалии. После возвращения на родину посвятил себя литературной деятельности. В 1944 году он был удостоен Литературной премии Мануэля Авило Камачо, а в 1949 году был номинирован на Нобелевскую премию`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BD%D1%81%D0%B0%D0%BB%D0%B5%D1%81_%D0%9C%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B5%D1%81,_%D0%AD%D0%BD%D1%80%D0%B8%D0%BA%D0%B5",
+    },
+    photo:
+      "./static/images/photo-author/modernism/ENRIQUE_GONZALEZ_MARTINEZ_1871_-_1952_POETA_MEXICANO_(13451188195).jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Ivan Franko",
+      biography: `Ivan Yakovych Franko (27 August 1856 – 28 May 1916)[1] was a Ukrainian poet, writer, social and literary critic, journalist, interpreter, economist, political activist, doctor of philosophy, ethnographer, and the author of the first detective novels and modern poetry in the Ukrainian language.
+
+      He was a political radical, and a founder of the socialist and nationalist movement in western Ukraine. In addition to his own literary work, he also translated the works of such renowned figures as William Shakespeare, Lord Byron, Pedro Calderón de la Barca, Dante Alighieri, Victor Hugo, Adam Mickiewicz, Johann Wolfgang von Goethe and Friedrich Schiller into Ukrainian. His translations appeared on the stage of the Ruska Besida Theatre. Along with Taras Shevchenko, he has had a tremendous impact on modern literary and political thought in Ukraine.`,
+      linkWiki: "https://en.wikipedia.org/wiki/Ivan_Franko",
+    },
+    ru: {
+      nameAuthor: "Иван Франко",
+      biography: `Ива́н Я́ковлевич Франко́ ( 27 августа 1856, с. Нагуевичи — 28 мая 1916, Львов) — украинский писатель, поэт, учёный, публицист и деятель революционного социалистического движения в королевстве Галиции и Лодомерии (Австро-Венгерской империи). Значительная часть произведений была написана на украинском, польском[8], немецком и русском языках. В 1915 году был выдвинут на получение Нобелевской премии, но преждевременная смерть помешала рассмотрению его кандидатуры.
+
+      Один из инициаторов основания «Русско-украинской радикальной партии» (позже «Украинская радикальная партия» — УРП) и Украинской национально-демократической партии, действовавших на территории Австрии.
+      
+      В честь Франко город Станислав переименован в Ивано-Франковск, а во Львовской области пгт Янов — в Ивано-Франково.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%BE,_%D0%98%D0%B2%D0%B0%D0%BD_%D0%AF%D0%BA%D0%BE%D0%B2%D0%BB%D0%B5%D0%B2%D0%B8%D1%87",
+    },
+    photo: "./static/images/photo-author/modernism/Іван_Якович_Франко.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Marina Tsvetaeva",
+      biography: `Marina Ivanovna Tsvetaeva ( 8 October [O.S. 26 September] 1892 – 31 August 1941) was a Russian poet. Her work is considered among some of the greatest in twentieth century Russian literature.[1] She lived through and wrote of the Russian Revolution of 1917 and the Moscow famine that followed it. In an attempt to save her daughter Irina from starvation, she placed her in a state orphanage in 1919, where she died of hunger. Tsvetaeva left Russia in 1922 and lived with her family in increasing poverty in Paris, Berlin and Prague before returning to Moscow in 1939. Her husband Sergei Efron and their daughter Ariadna (Alya) were arrested on espionage charges in 1941; her husband was executed. Tsvetaeva committed suicide in 1941. As a lyrical poet, her passion and daring linguistic experimentation mark her as a striking chronicler of her times and the depths of the human condition.`,
+      linkWiki: "https://en.wikipedia.org/wiki/Marina_Tsvetaeva",
+    },
+    ru: {
+      nameAuthor: "Марина Цветаева",
+      biography: `В эмиграции она написала в рассказе «Хлыстовки»: «Я бы хотела лежать на тарусском хлыстовском кладбище, под кустом бузины, в одной из тех могил с серебряным голубем, где растет самая красная и крупная в наших местах земляника. Но если это несбыточно, если не только мне там не лежать, но и кладбища того уж нет, я бы хотела, чтобы на одном из тех холмов, которыми Кирилловны шли к нам в Песочное, а мы к ним в Тарусу, поставили, с тарусской каменоломни, камень: „Здесь хотела бы лежать Марина Цветаева“». Также она говорила: «Здесь, во Франции, и тени моей не останется. Таруса, Коктебель, да чешские деревни — вот места души моей».
+
+      На высоком берегу Оки, в её любимом городе Тарусе согласно воле Цветаевой установлен камень (тарусский доломит) с надписью «Здесь хотела бы лежать Марина Цветаева». Первоначально кенотаф появился там в 1962 году благодаря усилиям киевского студента-филолога Семена Островского, поклонника поэзии Цветаевой, но затем был убран «во избежание», а позже, в более спокойные времена, восстановлен.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%A6%D0%B2%D0%B5%D1%82%D0%B0%D0%B5%D0%B2%D0%B0,_%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0",
+    },
+    photo: "./static/images/photo-author/modernism/Tsvetaeva.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      biography: `Anna Andreyevna Gorenko (23 June [O.S. 11 June] 1889 – 5 March 1966), better known by the pen name Anna Akhmatova, was one of the most significant Russian poets of 20th century. She was shortlisted for the Nobel Prize in 1965 and received second-most (three) nominations for the award the following year.
+
+      Akhmatova's work ranges from short lyric poems to intricately structured cycles, such as Requiem (1935–40), her tragic masterpiece about the Stalinist terror. Her style, characterised by its economy and emotional restraint, was strikingly original and distinctive to her contemporaries. The strong and clear leading female voice struck a new chord in Russian poetry. Her writing can be said to fall into two periods – the early work (1912–25) and her later work (from around 1936 until her death), divided by a decade of reduced literary output.[3] Her work was condemned and censored by Stalinist authorities, and she is notable for choosing not to emigrate and remaining in the Soviet Union, acting as witness to the events around her. Her perennial themes include meditations on time and memory, and the difficulties of living and writing in the shadow of Stalinism.
+      
+      Primary sources of information about Akhmatova's life are relatively scant, as war, revolution and the Soviet regime caused much of the written record to be destroyed. For long periods she was in official disfavour and many of those who were close to her died in the aftermath of the revolution. Akhmatova's first husband, Nikolay Gumilyov, was executed by the Soviet secret police, and her son Lev Gumilyov and her common-law husband Nikolay Punin spent many years in the Gulag, where Punin died.`,
+      linkWiki: "",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      biography: `Ставшая классиком русской поэзии, Ахматова подвергалась замалчиванию, цензуре и преследованиям (постановление ЦК ВКП(б) 1946 года не было отменено при её жизни), многие произведения не были опубликованы на родине не только при жизни автора, но и более двух десятилетий после её смерти. В то же время имя Ахматовой ещё при жизни окружала слава среди почитателей поэзии как в СССР, так и в эмиграции.
+
+      Одно из наиболее значительных произведений Ахматовой — поэма «Реквием», в которой отражено горе жён и матерей «врагов народа». Первые две главы поэмы были написаны в 1934—1935 годах, 3—7-я главы опубликованы в 1936—1943 годах, остальные — дорабатывались на протяжении будущих двадцати лет, когда саму Ахматову исключили из Союза писателей СССР. Сама поэма долгое время не публиковалась, выходила в самиздате, в свет она вышла в середине 1980-х.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0,_%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%BD%D0%B0",
+    },
+    photo:
+      "./static/images/photo-author/modernism/Kuzma_Petrov-Vodkin._Portrait_of_Anna_Akhmatova._1922.jpg",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      biography: `Blok was born in Saint Petersburg, into an intellectual family of Alexander Lvovich Blok and Alexandra Andreevna Beketova. His father was a law professor in Warsaw, and his maternal grandfather, Andrey Beketov, was a famous botanist and the rector of Saint Petersburg State University. After his parents' separation, Blok lived with aristocratic relatives at the manor Shakhmatovo near Moscow, where he discovered the philosophy of Vladimir Solovyov, and the verse of then-obscure 19th-century poets, Fyodor Tyutchev and Afanasy Fet. These influences would affect his early publications, later collected in the book Ante Lucem.`,
+      linkWiki: "https://en.wikipedia.org/wiki/Alexander_Blok",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      biography: `Блок был одним из тех деятелей искусства Петрограда, кто не просто принял советскую власть, но согласился работать на её пользу. Однако негативное отношение к Блоку со стороны некоторых руководителей культуры привело к тому, что он остался под конец жизни без материальных средств и умер от голода[12].
+
+      Власть широко начала использовать имя поэта в своих целях. На протяжении 1918—1920 годов Блока, зачастую вопреки его воле, назначали и выбирали на различные должности в организациях, комитетах, комиссиях[13]. Постоянно возрастающий объём работы подорвал силы поэта. Начала накапливаться усталость — Блок описывал своё состояние того периода словами «меня выпили». Этим же, возможно, и объясняется творческое молчание поэта — он писал в частном письме в январе 1919 года[14]: «Почти год как я не принадлежу себе, я разучился писать стихи и думать о стихах…». Тяжёлые нагрузки в советских учреждениях и проживание в голодном и холодном революционном Петрограде окончательно расшатали здоровье поэта — у Блока развилась астма, появились психические расстройства, зимой 1920 года началась цинга[14].
+      
+      Весной 1921 года Александр Блок вместе с Фёдором Сологубом просили выдать им выездные визы. Вопрос рассматривало Политбюро ЦК РКП(б). В выезде было отказано и вместо этого было постановлено «поручить Наркомпроду позаботиться об улучшении продовольственного положения Блока»[15]. Луначарский отмечал: «Мы в буквальном смысле слова, не отпуская поэта и не давая ему вместе с тем необходимых удовлетворительных условий, замучали его»[16]. Ряд историков полагал, что В. И. Ленин и В. Р. Менжинский[17] сыграли особо негативную роль в судьбе поэта, запретив больному выезд на лечение в санаторий в Финляндии, о чём, по ходатайству Максима Горького и Луначарского, шла речь на заседании политбюро ЦК РКП(б) 12 июля 1921 года. Выхлопотанное Л. Б. Каменевым и А. В. Луначарским на последующем заседании политбюро разрешение на выезд было подписано 23 июля 1921 года[14]. Но так как состояние Блока ухудшилось, 29 июля 1921 Горький просит разрешение на выезд и жене Блока как сопровождающему лицу. Уже 1 августа разрешение на выезд Л. Д. Блок подписано Молотовым, но Горький узнает об этом от Луначарского только 6 августа.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87",
+    },
+    photo: "./static/images/photo-author/modernism/Alexander_Blok.jpeg",
+  },
+  {
+    en: {
+      nameAuthor: "Vladimir Mayakovsky",
+      biography: `Vladimir Vladimirovich Mayakovsky ( 19 July [O.S. 7 July] 1893 – 14 April 1930) was a Russian and Soviet poet, playwright, artist, and actor.
+
+      During his early, pre-Revolution period leading into 1917, Mayakovsky became renowned as a prominent figure of the Russian Futurist movement. He co-signed the Futurist manifesto, A Slap in the Face of Public Taste (1913), and wrote such poems as "A Cloud in Trousers" (1915) and "Backbone Flute" (1916). Mayakovsky produced a large and diverse body of work during the course of his career: he wrote poems, wrote and directed plays, appeared in films, edited the art journal LEF, and produced agitprop posters in support of the Communist Party during the Russian Civil War of 1917–1922. Though Mayakovsky's work regularly demonstrated ideological and patriotic support for the ideology of the Bolsheviks and a strong admiration of Vladimir Lenin,[3][4] his relationship with the Soviet state was always complex and often tumultuous. Mayakovsky often found himself engaged in confrontation with the increasing involvement of the Soviet state in cultural censorship and the development of the State doctrine of Socialist realism. Works that criticized or satirized aspects of the Soviet system, such as the poem "Talking With the Taxman About Poetry" (1926), and the plays The Bedbug (1929) and The Bathhouse (1929), met with scorn from the Soviet state and literary establishment.
+      
+      In 1930, Mayakovsky killed himself. Even after death, his relationship with the Soviet state remained unsteady. Though Mayakovsky had previously been harshly criticized by Soviet governmental bodies such as the Russian Association of Proletarian Writers (RAPP), Premier Joseph Stalin described Mayakovsky after his death as "the best and the most talented poet of our Soviet epoch"`,
+      linkWiki: "https://en.wikipedia.org/wiki/Vladimir_Mayakovsky",
+    },
+    ru: {
+      nameAuthor: "В. Маяковский",
+      biography: `Раннее творчество Маяковского было экспрессивно и метафорично («Пойду рыдать, что перекрёстком распяты городовые», «А вы могли бы?»), сочетало энергию митинга и демонстрации с лиричнейшей камерностью («Скрипка издёргалась упрашивая»), ницшеанское богоборчество и тщательно замаскированное в душе религиозное чувство («Я, воспевающий машину и Англию / Может быть просто / В самом обыкновенном Евангелии / Тринадцатый апостол»).
+
+      По признанию поэта, всё началось со строки Андрея Белого «В небеса запустил ананасом». Давид Бурлюк познакомил молодого поэта с поэзией Рембо, Бодлера, Верлена, Верхарна, но решающее воздействие оказал свободный стих Уитмена. Маяковский не признавал традиционные стихотворные размеры, он придумывал для своих стихов ритм; полиметрические композиции объединяются стилем и единой синтаксической интонацией, которая задаётся графической подачей стиха: сначала разделением стиха на несколько строк, записываемых в столбик, а с 1923 года — знаменитой «лесенкой», которая стала «визитной карточкой» Маяковского. «Лесенка» помогала Маяковскому заставить читать его стихи с правильной интонацией, так как запятых иногда было недостаточно.
+      
+      После 1917 года Маяковский стал много писать; за пять предреволюционных лет им написан один том стихов и прозы; за двенадцать послереволюционных лет — одиннадцать томов. Например, в 1928 году он написал 125 стихотворений и пьесу. Много времени он проводил в разъездах по Советскому Союзу и за рубежом. В поездках порою проводил по 2-3 выступления в день (не считая участия в диспутах, собраниях, конференциях и т. д.), однако впоследствии в работах Маяковского стали появляться тревожные и беспокойные мысли; он изобличает пороки и недостатки нового строя (от стихотворения «Прозаседавшиеся», 1922, до пьесы «Баня», 1929). Его «заграничные поездки» воспринимают как попытки убежать от себя, в поэме «Во весь голос» присутствует строчка «роясь в сегодняшнем окаменевшем говне» (в подкорректированном цензурой варианте — «дерьме»). Хотя стихи, проникнутые официальной бодростью, в том числе посвящённые коллективизации, он продолжал создавать до последних дней. Ещё одна особенность поэта — сочетание пафосности и лиричности с ядовитейшей щедринской сатирой.`,
+      linkWiki:
+        "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87",
+    },
+    photo: "./static/images/photo-author/modernism/Majakovszkij.jpg",
+  },
 ];

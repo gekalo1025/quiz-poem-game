@@ -1,8 +1,3 @@
-// realism
-// sentimentalism
-// romanticism
-// modernism
-
 const poetryData = [
   {
     en: { nameAuthor: "J. W. Goethe", title: "New love - new life" },
@@ -290,18 +285,6 @@ const poetryData = [
     categoryPoetry: "romanticism",
     srcAudio:
       "./static/audio/audio-poetry/romanticism/mixail-yurevic-lermontov-vyxozu-odin-ya-na-dorogu-ucit-stixi-legko-audio-stixi-slusat-onlain.mp3",
-  },
-  {
-    en: {
-      nameAuthor: "M.Y. Lermontov",
-      title: "",
-    },
-    ru: {
-      nameAuthor: "М.Ю. Лермонтов",
-      title: "",
-    },
-    categoryPoetry: "romanticism",
-    srcAudio: "./static/audio/audio-poetry/romanticism/",
   },
   {
     en: {
@@ -629,19 +612,436 @@ const poetryData = [
       "./static/audio/audio-poetry/romanticism/gyugo-neznoe-stixotvorenie-zelaniya-13.4-80.7.mp3",
   },
 
-  // {
-  //   en: {
-  //     nameAuthor: "",
-  //     title: "",
-  //   },
-  //   ru: {
-  //     nameAuthor: "",
-  //     title: "",
-  //   },
-  //   categoryPoetry: "romanticism",
-  //   srcAudio:
-  //     "./static/audio/audio-poetry/romanticism/",
-  // },
+  {
+    en: {
+      nameAuthor: "Charles Baudelaire",
+      title: "Twilight",
+    },
+    ru: {
+      nameAuthor: "Шарль Бодлер",
+      title: "Сумерки",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/bodler-krasivoe-stixotvorenie-sumerki-15.5-104.5.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Charles Baudelaire",
+      title: "Albatross",
+    },
+    ru: {
+      nameAuthor: "Шарль Бодлер",
+      title: "Альбатрос",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/sarl-bodler-albatros-22.1-102.4.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Charles Baudelaire",
+      title: "Destruction",
+    },
+    ru: {
+      nameAuthor: "Шарль Бодлер",
+      title: "Разрушение",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/bodler-stixotvorenie-razrusenie-15.6-96.3.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Guillaume Apollinaire",
+      title: "May",
+    },
+    ru: {
+      nameAuthor: "Гийом Аполлинер",
+      title: "Май",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/giiom-apolliner-krasivoe-stixotvorenie-17.5-118.8.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Guillaume Apollinaire",
+      title: "My youth",
+    },
+    ru: {
+      nameAuthor: "Гийом Аполлинер",
+      title: "Моя молодость",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/giiom-apolliner-moya-molodost-ty-zanosena-14.8-93.6.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Guillaume Apollinaire",
+      title: "Mirabeau Bridge",
+    },
+    ru: {
+      nameAuthor: "Гийом Аполлинер",
+      title: "Мост Мирабо",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/giiom-apolliner-most-mirabo-21.9-122.5.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Rubén Darío",
+      title: "Nocturne",
+    },
+    ru: {
+      nameAuthor: "Рубен Дарио",
+      title: "Ноктюрн",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ruben-dario-stixotvorenie-dlya-dusi-16-107.9.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Rubén Darío",
+      title: "Sink",
+    },
+    ru: {
+      nameAuthor: "Рубен Дарио",
+      title: "Раковина",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/dario-mificeskoe-stixotvorenie-rakovina-14-86.4.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "W. B. Yeats",
+      title: "Two wood",
+    },
+    ru: {
+      nameAuthor: "Уильям Йейтс",
+      title: "Два дерева",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ieits-krasivoe-misticeskoe-stix-e-10.5-85.4.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "W. B. Yeats",
+      title: "Heart be stingy",
+    },
+    ru: {
+      nameAuthor: "Уильям Йейтс",
+      title: "Сердце будь скупым",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ieits-stixotvorenie-o-nescastnoi-lyubvi-13.3-59.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "W. B. Yeats",
+      title: "The song of Engus",
+    },
+    ru: {
+      nameAuthor: "Уильям Йейтс",
+      title: "Песнь Энгуса",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ieits-krasivoe-mificeskoe-stixotvorenie.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Enrique González Martínez",
+      title: "Be able to go over life",
+    },
+    ru: {
+      nameAuthor: "Энрике Мартинес",
+      title: "Сумей пройти над жизнью",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/martines-krasivoe-stixotvorenie-o-zizni-17-123.1.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Enrique González Martínez",
+      title: "Death from love",
+    },
+    ru: {
+      nameAuthor: "Энрике Мартинес",
+      title: "Смерть от любви",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/martines-krasivoe-stixotvorenie-o-lyubvi-15.6-72.6.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Ivan Franko",
+      title: "Why do you appear to me?",
+    },
+    ru: {
+      nameAuthor: "Иван Франко",
+      title: "Чого являєшся мені  у сні",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ivan-franko-cogo-yavlyajessya-meni-u-sni-audio-virs-13-117.8.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Ivan Franko",
+      title: "If you knew",
+    },
+    ru: {
+      nameAuthor: "Иван Франко",
+      title: "Якби ти знав",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ivan-franko-yakbi-ti-znav-yak-mnogo-vazit-slovo-12.1-145.5.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Ivan Franko",
+      title: "Stonemasons",
+    },
+    ru: {
+      nameAuthor: "Иван Франко",
+      title: "Каменярі",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ivan-franko-kamenyari-citaje-oleksandr-yarmak-sluxai-[AudioTrimmer.com].mp3",
+  },
+
+  {
+    en: {
+      nameAuthor: "Marina Tsvetaeva",
+      title: "In a huge city",
+    },
+    ru: {
+      nameAuthor: "Марина Цветаева",
+      title: "В огромном городе",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/v-ogromnom-gorode-moem-noc-anna-egoyan-avtor-marina-cvetaeva.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Marina Tsvetaeva",
+      title: "How many have fallen",
+    },
+    ru: {
+      nameAuthor: "Марина Цветаева",
+      title: "Уж сколько их упало",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/marina-cvetaeva-uz-skolko-ix-upalo-v-etu-bezdnu.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Marina Tsvetaeva",
+      title: "Here is the window again.",
+    },
+    ru: {
+      nameAuthor: "Марина Цветаева",
+      title: "Вот опять окно",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/marina-cvetaeva-vot-opyat-okno (1).mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Marina Tsvetaeva",
+      title: "Homesickness",
+    },
+    ru: {
+      nameAuthor: "Марина Цветаева",
+      title: "Тоска по родине",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/marina-cvetaeva-toska-po-rodine-davno.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      title: "Late answer",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      title: "Поздний ответ",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/ty-osibsya-lyubov-eto-ad-anna-axmatova-lyubimye-stixi.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      title: "Покорно мне воображенье",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      title: "Покорно мне воображенье",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/pokorno-mne-voobrazene-anna-axmatova-alisa-freindlix.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      title: "I had a voice",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      title: "Мне голос был",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/anna-axmatova-kogda-v-toske-samoubiistva-fragment.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      title: "Sentence",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      title: "Приговор",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/anna-axmatova-prigovor.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Anna Akhmatova",
+      title: "Requiem",
+    },
+    ru: {
+      nameAuthor: "Анна Ахматова",
+      title: "Реквием",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aaxmatovarekviemcitaet-lyudmila-duxovnaya-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      title: "When you're hunkered down and hammered",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      title: "Когда ты загнан и забит",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aleksandr-blokkogda-ty-zagnan-i-zabitpoema-vozmezdie.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      title: "In the restaurant",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      title: "В ресторане",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aleksandr-blok-v-restorane-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      title: "Night. Street. Lantern. Pharmacy",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      title: "Ночь. Улица. Фонарь. Аптека",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aleksandr-blok-noc-ulica-fonar-apteka.mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      title: "Bless all that was",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      title: "Благославляю все что было",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aleksandr-blok-blagoslovlyayu-vsyo-cto-bylo-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Alexander Blok",
+      title: "Oh, I want to live madly",
+    },
+    ru: {
+      nameAuthor: "А. Блок",
+      title: "О, я хочу безумно жить",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/aleksandr-blok-o-ya-xocu-bezumno-zit-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Vladimir Mayakovsky",
+      title: "Cloud in your pants",
+    },
+    ru: {
+      nameAuthor: "В. Маяковский",
+      title: "Облако в штанах",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/vladimir-mayakovskii-oblako-v-stanax-otryvok (1)-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Vladimir Mayakovsky",
+      title: "At one hundred and forty suns the sunset was blazing",
+    },
+    ru: {
+      nameAuthor: "В. Маяковский",
+      title: "В сто сорок солнц закат пылал",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/vladimir-mayakovskii-neobycainoe-priklyucenie-byvsee-s-vladimirom-mayakovskim-letom-na-dace-[AudioTrimmer.com].mp3",
+  },
+  {
+    en: {
+      nameAuthor: "Vladimir Mayakovsky",
+      title: "Listen",
+    },
+    ru: {
+      nameAuthor: "В. Маяковский",
+      title: "Послушайте",
+    },
+    categoryPoetry: "modernism",
+    srcAudio:
+      "./static/audio/audio-poetry/modernism/vladimir-mayakovskii-poslusaite.mp3",
+  },
 ];
 
 export default poetryData;
