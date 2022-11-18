@@ -41,7 +41,7 @@ export default function showAuthorDescription(nameAuthor, resultAnswer) {
           item[settingGame.language].biography;
         authorDescriptionBtn.setAttribute(
           "onclick",
-          `window.open('${item.linkWiki}', '_blank')`
+          `window.open('${item[settingGame.language].linkWiki}', '_blank')`
         );
       }
     });
