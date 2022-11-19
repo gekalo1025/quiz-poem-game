@@ -31,14 +31,13 @@ export default function toggleLanguage() {
 
   const allYearCreation = document.querySelectorAll(".year-creation");
   const allScoreTitle = document.querySelectorAll(".score__title");
-  const galeryPoemsLink = document.querySelector(".galery-poems-link");
+  const galeryPoemsLink = document.querySelectorAll(".galery-poems-link");
 
   if (settingGame.language === "en") {
     classicism.textContent = "Classicism";
     romanticism.textContent = "Romanticism";
     modernism.textContent = "Modernism";
     greetingText.textContent = "Select a category to start playing";
-    galeryPoemsLink.textContent = "Poetry gallery";
 
     stubText.textContent = "Listen to the poem and choose the author";
     nextquestionBtn.innerHTML = `Next question <img src="images/cbdd1ee76b73ae4dd261.svg" alt="next question">`;
@@ -51,6 +50,7 @@ export default function toggleLanguage() {
      >Play again ?</a
    >`;
 
+    galeryPoemsLink.forEach((item) => (item.textContent = "Poetry gallery"));
     allYearCreation.forEach((item) => (item.textContent = "2022 year"));
     allScoreTitle.forEach(
       (item) =>
@@ -61,7 +61,6 @@ export default function toggleLanguage() {
     romanticism.textContent = "Романтизм";
     modernism.textContent = "Модернизм";
     greetingText.textContent = "Чтобы начать игру выберите категорию";
-    galeryPoemsLink.textContent = "Галерея стихов";
 
     stubText.textContent = "Прослушайте стихотворение и выберите автора";
     nextquestionBtn.innerHTML = `Следующий вопрос <img src="images/cbdd1ee76b73ae4dd261.svg" alt="next question">`;
@@ -73,7 +72,7 @@ export default function toggleLanguage() {
    <a href="./quiz-poems.html" class="result__btn"
      >Желаете сыграть еще ?</a
    >`;
-
+    galeryPoemsLink.forEach((item) => (item.textContent = "Галерея стихов"));
     allYearCreation.forEach((item) => (item.textContent = "2022 год"));
     allScoreTitle.forEach(
       (item) =>
