@@ -4,6 +4,7 @@ import showAuthorDescription from "../../js/showAuthorDescription";
 import audioError1 from "../../assets/audio/zvuk-nepravilnogo-otveta1-2.mp3";
 import audioError2 from "../../assets/audio/zvuk-nepravilnogo-otveta2-2.mp3";
 import audioCorrect from "../../assets/audio/zvuk-pravilnogo-otveta.mp3";
+import imgPlay from "../../assets/icons/play.svg";
 export const settingGame = {
   currentQuestion: null,
   categoryGame: null,
@@ -116,7 +117,8 @@ category.addEventListener("click", (element) => {
   startGame();
   toggleHiddenBody();
 });
-currentQuestionPlayBtn.addEventListener("click", () => {
+
+function playCurrentQuestionAudio() {
   if (authorDescriptionPlayer.isPlay) {
     authorDescriptionPlayer.playAudio();
     authorDescriptionPlayer.toggleBtn();
@@ -124,7 +126,8 @@ currentQuestionPlayBtn.addEventListener("click", () => {
   currentQuestionPlayer.playAudio();
   currentQuestionPlayer.toggleBtn();
   currentQuestionPlayer.showAudioDuration();
-});
+}
+
 currentQuestionAudio.addEventListener("ended", () => {
   currentQuestionPlayer.isPlay = false;
   currentQuestionPlayer.toggleBtn();
@@ -135,6 +138,7 @@ timebarLine.addEventListener("change", () => {
 });
 
 ////////////////////////
+
 authorDescriptionPlayBtn.addEventListener("click", () => {
   if (currentQuestionPlayer.isPlay) {
     currentQuestionPlayer.playAudio();
@@ -145,6 +149,7 @@ authorDescriptionPlayBtn.addEventListener("click", () => {
   authorDescriptionPlayer.toggleBtn();
   authorDescriptionPlayer.showAudioDuration();
 });
+
 authorDescriptionAudio.addEventListener("ended", () => {
   authorDescriptionPlayer.isPlay = false;
   authorDescriptionPlayer.toggleBtn();
@@ -321,3 +326,12 @@ document
 window.addEventListener("beforeunload", setLocalStorage);
 
 window.addEventListener("load", getLocalStorage);
+
+currentQuestionAudio.addEventListener("loadeddata", () => {
+  currentQuestionPlayer.btnPlay.src = imgPlay;
+  currentQuestionPlayBtn.addEventListener("click", playCurrentQuestionAudio);
+});
+
+authorDescriptionAudio.addEventListener("loadeddata", () => {
+  authorDescriptionAudio.btnPlay.src = imgPlay;
+});
