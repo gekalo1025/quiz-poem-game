@@ -1,5 +1,6 @@
 import {
   currentQuestionAudio,
+  currentQuestionPlayer,
   settingGame,
 } from "../pages/quiz-poems/quiz-poems";
 import addAnswersOptions from "./addAnswerOptions";

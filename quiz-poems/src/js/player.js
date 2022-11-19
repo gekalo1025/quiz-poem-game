@@ -48,6 +48,7 @@ class Player {
       this.btnPlay.src = imgPlay;
     }
   }
+
   currentTimeAudio() {
     this.timebarLine.min = 0;
     this.timebarLine.value = this.audio.currentTime;
@@ -82,14 +83,15 @@ class Player {
       if (reset) {
         this.maxTime.textContent = `0:00`;
         return;
-      }
-      if (this.audio.duration < 60) {
-        this.maxTime.textContent = `0:${Math.round(this.audio.duration)}`;
-      }
-      if (this.audio.duration >= 60) {
-        this.maxTime.textContent = `${Math.trunc(this.audio.duration / 60)}:${
-          Math.round(this.audio.duration) % 60
-        }`;
+      } else {
+        if (this.audio.duration < 60) {
+          this.maxTime.textContent = `0:${Math.round(this.audio.duration)}`;
+        }
+        if (this.audio.duration >= 60) {
+          this.maxTime.textContent = `${Math.trunc(this.audio.duration / 60)}:${
+            Math.round(this.audio.duration) % 60
+          }`;
+        }
       }
     }
   }

@@ -113,11 +113,14 @@ category.addEventListener("click", (element) => {
   settingGame.categoryGame = element.target.id;
   settingGame.currentQuestion = choiceQuestion(element.target.id);
   settingGame.passedQuestions.push(settingGame.currentQuestion);
-
   startGame();
   toggleHiddenBody();
 });
 currentQuestionPlayBtn.addEventListener("click", () => {
+  if (authorDescriptionPlayer.isPlay) {
+    authorDescriptionPlayer.playAudio();
+    authorDescriptionPlayer.toggleBtn();
+  }
   currentQuestionPlayer.playAudio();
   currentQuestionPlayer.toggleBtn();
   currentQuestionPlayer.showAudioDuration();
@@ -133,6 +136,11 @@ timebarLine.addEventListener("change", () => {
 
 ////////////////////////
 authorDescriptionPlayBtn.addEventListener("click", () => {
+  if (currentQuestionPlayer.isPlay) {
+    currentQuestionPlayer.playAudio();
+    currentQuestionPlayer.toggleBtn();
+  }
+
   authorDescriptionPlayer.playAudio();
   authorDescriptionPlayer.toggleBtn();
   authorDescriptionPlayer.showAudioDuration();
@@ -168,14 +176,18 @@ answersOptions.addEventListener("click", (element) => {
     nextQuestionBtn.getAttribute("disabled") !== null
   ) {
     audioСor.play();
-    currentQuestionPlayer.playAudio();
-    currentQuestionPlayer.toggleBtn();
+
+    if (currentQuestionPlayer.isPlay) {
+      currentQuestionPlayer.playAudio();
+      currentQuestionPlayer.toggleBtn();
+      authorDescriptionPlayer.showAudioDuration(true);
+    }
+
     nextQuestionBtn.disabled = false;
     showAuthorDescription(element.target.textContent, "correct");
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("correct-answer");
     settingGame.score += maxPointAnswer - settingGame.numberWrongAnswer;
-    // scorePointsAll[0].textContent = settingGame.score;
     document.querySelector(".body-quiz-poems .score__points").textContent =
       settingGame.score;
     document.querySelector(".body-results .score__points").textContent =
@@ -183,10 +195,12 @@ answersOptions.addEventListener("click", (element) => {
     settingGame.numberWrongAnswer = 0;
   }
   if (nextQuestionBtn.getAttribute("disabled") === null) {
+    authorDescriptionPlayer.showAudioDuration(true);
     showAuthorDescription(element.target.textContent, "wrong");
     authorDescriptionPlayer.isPlay = false;
     authorDescriptionPlayer.toggleBtn();
   } else {
+    authorDescriptionPlayer.showAudioDuration(true);
     audioErr.play();
     if (settingGame.counterClickError === 1) {
       settingGame.counterClickError = 0;
@@ -206,7 +220,16 @@ navQuestionAll[settingGame.numberQuestionComplite].classList.add("current");
 
 nextQuestionBtn.addEventListener("click", () => {
   upScroll();
-  // magic  number - amount question
+
+  if (currentQuestionPlayer.isPlay) {
+    currentQuestionPlayer.playAudio();
+    currentQuestionPlayer.toggleBtn();
+  }
+  if (authorDescriptionPlayer.isPlay) {
+    authorDescriptionPlayer.playAudio();
+    authorDescriptionPlayer.toggleBtn();
+  }
+
   if (settingGame.numberQuestionComplite === 9) {
     document.querySelector(".body-quiz-poems").classList.add("hidden");
     document.querySelector(".body-results").classList.remove("hidden");
@@ -224,12 +247,6 @@ nextQuestionBtn.addEventListener("click", () => {
     }
     document.querySelector(".result__current-score").textContent =
       settingGame.score;
-    if (currentQuestionPlayer.isPlay) {
-      currentQuestionPlayer.playAudio();
-    }
-    if (authorDescriptionPlayer.isPlay) {
-      authorDescriptionPlayer.playAudio();
-    }
   }
   if (settingGame.numberQuestionComplite < 9) {
     navQuestionAll[settingGame.numberQuestionComplite].classList.remove(
