@@ -11,7 +11,7 @@ export default function showScrollArrow() {
   let currentDisplayHeight = document.documentElement.clientHeight;
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollHeight - currentDisplayHeight - scrollTop < 20) {
+  if (scrollHeight - currentDisplayHeight - scrollTop < 50) {
     downArrow.classList.add("hidden");
   } else {
     downArrow.classList.remove("hidden");
