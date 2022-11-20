@@ -4,6 +4,7 @@ const languageBtn = document.querySelectorAll(".language-btn img");
 import flagRussia from "../assets/icons/russian-federation.png";
 import flagEngland from "../assets/icons/great-britain.png";
 import { setLocalStorage } from "./setLocalStorage";
+import poetryData from "./poetryCategories";
 
 export default function toggleLanguage() {
   if (settingGame.language === "ru") {
@@ -50,7 +51,9 @@ export default function toggleLanguage() {
      >Play again ?</a
    >`;
 
-    galeryPoemsLink.forEach((item) => (item.textContent = "Poetry gallery"));
+    galeryPoemsLink.forEach(
+      (item) => (item.innerHTML = `Poetry gallery(${poetryData.length} verses)`)
+    );
     allYearCreation.forEach((item) => (item.textContent = "2022 year"));
     allScoreTitle.forEach(
       (item) =>
@@ -72,7 +75,9 @@ export default function toggleLanguage() {
    <a href="./quiz-poems.html" class="result__btn"
      >Желаете сыграть еще ?</a
    >`;
-    galeryPoemsLink.forEach((item) => (item.textContent = "Галерея стихов"));
+    galeryPoemsLink.forEach(
+      (item) => (item.innerHTML = `Галерея стихов (${poetryData.length} стиха)`)
+    );
     allYearCreation.forEach((item) => (item.textContent = "2022 год"));
     allScoreTitle.forEach(
       (item) =>
