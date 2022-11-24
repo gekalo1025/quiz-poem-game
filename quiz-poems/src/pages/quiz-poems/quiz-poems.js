@@ -14,6 +14,7 @@ export const settingGame = {
   passedQuestions: [],
   counterClickError: 0,
   language: "ru",
+  arrErrorAnswer: [],
 };
 
 import startGame from "../../js/startGame";
@@ -180,6 +181,7 @@ answersOptions.addEventListener("click", (element) => {
       settingGame.currentQuestion[settingGame.language].nameAuthor &&
     nextQuestionBtn.getAttribute("disabled") !== null
   ) {
+    settingGame.arrErrorAnswer = [];
     audioСor.play();
 
     if (currentQuestionPlayer.isPlay) {
@@ -214,10 +216,14 @@ answersOptions.addEventListener("click", (element) => {
     }
     showAuthorDescription(element.target.textContent, "wrong");
     element.target.classList.add("wrong-answer");
-    settingGame.numberWrongAnswer++;
 
     authorDescriptionPlayer.isPlay = false;
     authorDescriptionPlayer.toggleBtn();
+
+    if (!settingGame.arrErrorAnswer.includes(element.target.textContent)) {
+      settingGame.arrErrorAnswer.push(element.target.textContent);
+      settingGame.numberWrongAnswer++;
+    }
   }
 });
 
