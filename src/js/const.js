@@ -49,3 +49,4 @@ export const headerLogoAll = document.querySelectorAll(".header__logo");
 export const category = document.querySelector(".header__nav");
 export const scorePointsAll = document.querySelectorAll(".score__points");
 export const nextQuestionBtn = document.querySelector(".next-question-btn");
+export const galleryPoetryCards = document.querySelector(".gallery__poetry-cards");
