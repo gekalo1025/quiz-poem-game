@@ -1,8 +1,4 @@
-import {
-  currentQuestionAudio,
-  currentQuestionPlayer,
-  settingGame,
-} from "../pages/quiz-poems/quiz-poems";
+import { currentQuestionAudio, settingGame } from "../pages/quiz-poems/quiz-poems";
 import addAnswersOptions from "./addAnswerOptions";
 import choiceAnswer from "./choiceAnswer";
 import cleanTitle from "./cleanTitle";

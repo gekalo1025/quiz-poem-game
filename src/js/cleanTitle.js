@@ -1,19 +1,6 @@
 import imageStub from "../assets/images/image-stub.jpg";
 import { currentQuestionPlayer } from "../pages/quiz-poems/quiz-poems";
-
-const authorDescriptionImg = document.querySelector("#author-description-img");
-const authorDescriptionTitle = document.querySelector(
-  "#author-description-title"
-);
-const authorDescriptionText = document.getElementById(
-  "author-description__text"
-);
-const currentQuestionImg = document.getElementById("current-question-img");
-
-const currentQuestionTitle = document.getElementById("current-question-title");
-const authorDescriptionStub = document.querySelector(
-  ".author-description__stub"
-);
+import { authorDescriptionImg, authorDescriptionTitle, authorDescriptionText, currentQuestionImg, currentQuestionTitle, authorDescriptionStub } from "./const";
 
 export default function cleanTitle() {
   currentQuestionPlayer.showCurrentAudioDuration(true);

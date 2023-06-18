@@ -1,5 +1,6 @@
+import { downArrow } from "./const";
+
 export default function showScrollArrow() {
-  const downArrow = document.querySelector(".down-arrow");
   let scrollHeight = Math.max(
     document.body.scrollHeight,
     document.body.offsetHeight,

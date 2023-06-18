@@ -1,13 +1,15 @@
 import { settingGame } from "../pages/quiz-poems/quiz-poems";
-import poetryData from "./poetryCategories";
+import poetryData from "../data/poetryCategories";
 
 function choiceAnswer(category) {
   let filterArr = poetryData.filter((item) => item.categoryPoetry == category);
-  let filterArrNoDuplicates = new Set();
+  let filterArrNoDuplicate = new Set();
+
   filterArr.forEach((element) => {
-    filterArrNoDuplicates.add(element[settingGame.language].nameAuthor);
+    filterArrNoDuplicate.add(element[settingGame.language].nameAuthor);
   });
-  return [...filterArrNoDuplicates];
+
+  return [...filterArrNoDuplicate];
 }
 
 export default choiceAnswer;

@@ -11,6 +11,4 @@ export function getLocalStorage() {
     }
     toggleLanguage();
   }
-  // else {
-  //   localStorage.setItem("language", settingGame.language);
 }

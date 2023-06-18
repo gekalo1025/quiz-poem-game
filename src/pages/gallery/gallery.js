@@ -1,6 +1,6 @@
 import "../../stylesheets/main.scss";
-import poetryData from "../../js/poetryCategories";
-import { poetryBiography } from "../../js/paetryBiography";
+import poetryData from "../../data/poetryCategories";
+import { poetryBiography } from "../../data/paetryBiography";
 import imgPlay from "../../assets/icons/play.svg";
 import imgPause from "../../assets/icons/pause.svg";
 import imgVolume from "../../assets/icons/sound-on.svg";
@@ -40,19 +40,8 @@ function addCardVerse() {
 
     newCard.appendChild(verseCardInfo);
 
-    img.src = poetryBiography.filter(
-      (item) =>
-        item[localStorage.getItem("language")].nameAuthor ===
-        copyPoetryData[randomNumber][localStorage.getItem("language")]
-          .nameAuthor
-    )[0].photo;
-    verseCardTitle.innerText =
-      copyPoetryData[randomNumber][localStorage.getItem("language")]
-        .nameAuthor +
-      "\n" +
-      `"${
-        copyPoetryData[randomNumber][localStorage.getItem("language")].title
-      }"`;
+    img.src = poetryBiography.filter((item) => item[localStorage.getItem("language")].nameAuthor === copyPoetryData[randomNumber][localStorage.getItem("language")].nameAuthor)[0].photo;
+    verseCardTitle.innerText = copyPoetryData[randomNumber][localStorage.getItem("language")].nameAuthor + "\n" + `"${copyPoetryData[randomNumber][localStorage.getItem("language")].title}"`;
     audio.src = copyPoetryData[randomNumber].srcAudio;
 
     galleryPoetryCards.append(newCard);

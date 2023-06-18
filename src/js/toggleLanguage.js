@@ -1,10 +1,10 @@
 import { settingGame } from "../pages/quiz-poems/quiz-poems";
 import startGame from "./startGame";
-const languageBtn = document.querySelectorAll(".language-btn img");
+import { languageBtn, classicism, romanticism, modernism, greetingText, stubText, nextquestionBtn, resultText, authorDescriptionBtn, galeryPoemsLink, allScoreTitle, allYearCreation } from "./const";
 import flagRussia from "../assets/icons/russian-federation.png";
 import flagEngland from "../assets/icons/great-britain.png";
 import { setLocalStorage } from "./setLocalStorage";
-import poetryData from "./poetryCategories";
+import poetryData from "../data/poetryCategories";
 
 export default function toggleLanguage() {
   if (settingGame.language === "ru") {
@@ -14,25 +14,6 @@ export default function toggleLanguage() {
     languageBtn.forEach((item) => (item.src = flagEngland));
     settingGame.language = "ru";
   }
-
-  const classicism = document.getElementById("classicism");
-  const romanticism = document.getElementById("romanticism");
-  const modernism = document.getElementById("modernism");
-  const greetingText = document.querySelector(".greeting__text");
-
-  const stubText = document.querySelector(".stub__text");
-  const nextquestionBtn = document.querySelector(".next-question-btn");
-  const authorDescriptionBtn = document.querySelector(
-    ".author-description__btn"
-  );
-
-  const resultText = document.querySelector(".result__text");
-  const resultCurrentScore = document.querySelector(".result__current-score");
-  const resultNewGameBtn = document.querySelector(".result__text a");
-
-  const allYearCreation = document.querySelectorAll(".year-creation");
-  const allScoreTitle = document.querySelectorAll(".score__title");
-  const galeryPoemsLink = document.querySelectorAll(".galery-poems-link");
 
   if (settingGame.language === "en") {
     classicism.textContent = "Classicism";
@@ -51,14 +32,9 @@ export default function toggleLanguage() {
      >Play again ?</a
    >`;
 
-    galeryPoemsLink.forEach(
-      (item) => (item.innerHTML = `Poetry gallery(${poetryData.length} verses)`)
-    );
+    galeryPoemsLink.forEach((item) => (item.innerHTML = `Poetry gallery(${poetryData.length} verses)`));
     allYearCreation.forEach((item) => (item.textContent = "2022 year"));
-    allScoreTitle.forEach(
-      (item) =>
-        (item.innerHTML = `Score: <span id="score-points" class="score__points">${settingGame.score}</span>`)
-    );
+    allScoreTitle.forEach((item) => (item.innerHTML = `Score: <span id="score-points" class="score__points">${settingGame.score}</span>`));
   } else {
     classicism.textContent = "Классицизм";
     romanticism.textContent = "Романтизм";
@@ -75,9 +51,7 @@ export default function toggleLanguage() {
    <a href="./quiz-poems.html" class="result__btn"
      >Желаете сыграть еще ?</a
    >`;
-    galeryPoemsLink.forEach(
-      (item) => (item.innerHTML = `Галерея стихов (${poetryData.length} стиха)`)
-    );
+    galeryPoemsLink.forEach((item) => (item.innerHTML = `Галерея стихов (${poetryData.length} стиха)`));
     allYearCreation.forEach((item) => (item.textContent = "2022 год"));
     allScoreTitle.forEach(
       (item) =>
@@ -87,9 +61,7 @@ export default function toggleLanguage() {
   }
   setLocalStorage();
 
-  if (
-    !document.querySelector(".body-quiz-poems").classList.contains("hidden")
-  ) {
+  if (!document.querySelector(".body-quiz-poems").classList.contains("hidden")) {
     startGame();
   }
 }
