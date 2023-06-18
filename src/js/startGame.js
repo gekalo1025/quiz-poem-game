@@ -1,7 +1,8 @@
-import { currentQuestionAudio, settingGame } from "../pages/quiz-poems/quiz-poems";
+import { settingGame } from "../pages/quiz-poems/quiz-poems";
 import addAnswersOptions from "./addAnswerOptions";
 import choiceAnswer from "./choiceAnswer";
 import cleanTitle from "./cleanTitle";
+import { currentQuestionAudio } from "./const";
 
 function startGame() {
   cleanTitle();
